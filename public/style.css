@@ -21,3 +21,14 @@ body {
   border: 3px solid green;
   padding: 10px;
 }
+.table {
+  display: grid;
+  grid-template-columns: 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30;
+  grid-template-rows: 30 30 30 30 30 30 30 30 30;
+}
+.settings {
+  display: grid;
+}
+.App {
+  display: flexbox;
+}
