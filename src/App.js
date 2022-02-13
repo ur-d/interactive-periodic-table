@@ -1,7 +1,8 @@
 function App() {
   return (
     <div className="App">
-      <h1>jeporejr</h1>
+      <div className="settings"></div>
+      <div className="table"></div>
     </div>
   );
 }
