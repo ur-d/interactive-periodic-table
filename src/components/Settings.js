@@ -1,12 +1,12 @@
 import React from "react";
 
-const App = () => {
+const Settings = () => {
   return (
-    <div className="App">
+    <div className="Settings">
       <p>1</p>
       <p>2</p>
     </div>
   );
 };
 
-export default App;
+export default Settings;

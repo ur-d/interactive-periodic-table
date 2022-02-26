@@ -1,12 +1,12 @@
 import React from "react";
 
-const App = () => {
+const Home = () => {
   return (
-    <div className="App">
+    <div className="Home">
       <p>1</p>
       <p>2</p>
     </div>
   );
 };
 
-export default App;
+export default Home;
