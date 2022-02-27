@@ -1,12 +1,7 @@
 import React from "react";
 
 const Element = (props) => {
-  return (
-    <div>
-      <p>E</p>
-      <p>L</p>
-    </div>
-  );
+  return <div>{props[0]}</div>;
 };
 
 export default Element;

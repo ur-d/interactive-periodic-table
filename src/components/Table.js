@@ -25,7 +25,7 @@ const Table = () => {
   return (
     <div className="table">
       {data.map((element) => (
-        <Element element={element} key={element.name} />
+        <Element element={element} key={element[0][0]} />
       ))}
     </div>
   );
