@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import Parameter from "./Parameter";
 
 const Settings = () => {
+  const [data, setData] = useState([]);
+
   return (
-    <div className="Settings">
-      <p>1</p>
-      <p>2</p>
+    <div className="settings">
+      <Parameter />
     </div>
   );
 };

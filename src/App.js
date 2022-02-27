@@ -1,10 +1,12 @@
 import React from "react";
+import Settings from "./components/Settings";
+import Table from "./components/Table";
 
 const App = () => {
   return (
-    <div className="App">
-      <p>1</p>
-      <p>2</p>
+    <div className="app">
+      <Settings />
+      <Table />
     </div>
   );
 };
