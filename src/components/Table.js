@@ -12,10 +12,6 @@ const Table = () => {
         if (rawFile.status === 200 || rawFile.status === 0) {
           var allText = rawFile.responseText;
           setData(allText.split("\n"));
-          alert(allText.split("\n"));
-          console.table(
-            allText.split("\n").forEach((element) => element.split(";"))
-          );
         }
       }
     };
@@ -25,7 +21,7 @@ const Table = () => {
   return (
     <div className="table">
       {data.map((element) => (
-        <Element element={element} key={element[0][0]} />
+        <Element element={element} key={element.split(",")} />
       ))}
     </div>
   );

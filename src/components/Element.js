@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Element = (props) => {
-  return <div>{props[0]}</div>;
+  useEffect(() => {
+    alert(props);
+  }, []);
+  return (
+    <div className="element">
+      element
+      <div></div>
+    </div>
+  );
 };
 
 export default Element;
