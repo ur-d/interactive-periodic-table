@@ -2,8 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Comment installer le projet :
-Préinstaller [nodejs avec npm](https://nodejs.org/en/download/) dans leur dernières verison
+Comment installer le projet :\
+Préinstaller [nodejs avec npm](https://nodejs.org/en/download/) dans leur dernières verison\
+Dans apt :
+```
+sudo apt-get install -y nodejs
+```
 Dans un dossier
 ```
 git clone https://github.com/ur-d/Interactive-Periodic-Table.git
