@@ -9,9 +9,9 @@ How to install the project :
 ```
 git clone https://github.com/ur-d/Interactive-Periodic-Table.git
 ```
-3. Then in "Interactive-Periodic-Table" `cd Interactive-Periodic-Table` run
+1. Then in "Interactive-Periodic-Table" run
 ```
-npm i
+npm install
 ```
 
 ## Available Scripts
