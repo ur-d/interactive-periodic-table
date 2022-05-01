@@ -2,19 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Comment installer le projet :\
-Préinstaller [nodejs avec npm](https://nodejs.org/en/download/) dans leur dernières verison\
-Dans apt :
-```
-sudo apt-get install -y nodejs
-```
-Dans un dossier
+How to install the project :
+
+    1. Install [nodejs with npm](https://nodejs.org/en/download/) and [git](https://git-scm.com/downloads)
+    2. In a folder run with your command terminal
 ```
 git clone https://github.com/ur-d/Interactive-Periodic-Table.git
 ```
-Puis dans "Interactive-Periodic-Table"
+    3. Then in "Interactive-Periodic-Table" `cd Interactive-Periodic-Table` run
 ```
-npm install
+npm i
 ```
 
 ## Available Scripts
@@ -29,11 +26,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
@@ -43,3 +35,9 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).

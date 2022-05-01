@@ -1,21 +1,78 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
-  list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
 }
-
+  
 body {
-  background-color: #181818;
+    background-color: #181818;
 
-  /* overflow: hidden; */
+    overflow: hidden;
+}
+  
+p {
+    color: aliceblue;
+}
+label {
+    color: aliceblue;
+    margin: 3%;
+}
+li {
+    margin: 3%;
+}
+ul {
+    padding-top: 5%;}
+
+.element {
+    background-color: bisque;
+    // height: 80%;
+    aspect-ratio: 15/20;
 }
 
-p {
-  color: aliceblue;
+div.element>div {
+    height: 15px;
+    aspect-ratio: 1/2;
 }
 
 .elements {
-  margin: auto;
-  width: 50%;
-  border: 3px solid green;
-  padding: 10px;
+    width: 75% !important;
+    // margin: auto;
+    border: 3px solid green;
+    // padding: 10px;
+    display: grid;
+    // grid-template-rows: repeat(9, 11,1%);
+    // grid-template-columns: repeat(18, 5,5%);
+    grid-template-areas:
+        "H . . . . . . . . . . . . . . . . He"
+        "Li Be . . . . . . . . . . B C N O F Ne"
+        "Na Mg . . . . . . . . . . Al Si P S Cl Ar"
+        "K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr"
+        "Rb Sr Y Zr Nb Mo Tc Ru Rh Pd Ag Cd In Sn Sb Te I Xe"
+        "Cs Ba . Hf Ta W Re Os Ir Pt Au Hg Tl Pb Bi Po At Rn"
+        "Fr Ra . Rf Db Sg Bh Hs Mt Ds Rg Cn Nh Fl Mc Lv Ts Og"
+        ". . . La Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm Yb Lu"
+        ". . . Ac Th Pa U Np Pu Am Cm Bk Cf Es Fm Md No Lr";
+    order: 5;
+    // flex-grow: 2;
+    aspect-ratio: 100/65;
+    grid-row-gap: 1.2% !important;
+    // grid-row-gap: 1.2%;
+    grid-column-gap: 0.7% !important;
+    // grid-column-gap: 0.7%;
+}
+
+.parameters {
+    border: 3px solid green;
+    width: 25%;
+    order: 1;
+    flex-grow: 2;
+}
+
+.table {
+    // padding: 1%;
+    margin: 1%;
+    aspect-ratio: 205/100;
+    border: 3px solid red;
+    // margin-right: 10%;
+    display: flex;
+    // margin: 2%;
 }

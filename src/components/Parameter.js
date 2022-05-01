@@ -1,12 +1,11 @@
-import React from "react";
+import React from 'react';
 
-const Parameter = (props) => {
-  return (
-    <div className="parameter">
-      <p>a</p>
-      <p>p</p>
-    </div>
-  );
+const Parameter = () => {
+    return (
+        <div className="parameter">
+            <p>parameter</p>
+        </div>
+    );
 };
 
 export default Parameter;
