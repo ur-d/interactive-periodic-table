@@ -4,12 +4,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 How to install the project :
 
-    1. Install [nodejs with npm](https://nodejs.org/en/download/) and [git](https://git-scm.com/downloads)
-    2. In a folder run with your command terminal
+1. Install [nodejs with npm](https://nodejs.org/en/download/) and [git](https://git-scm.com/downloads)
+2. In a folder run with your command terminal
 ```
 git clone https://github.com/ur-d/Interactive-Periodic-Table.git
 ```
-    3. Then in "Interactive-Periodic-Table" `cd Interactive-Periodic-Table` run
+3. Then in "Interactive-Periodic-Table" `cd Interactive-Periodic-Table` run
 ```
 npm i
 ```
