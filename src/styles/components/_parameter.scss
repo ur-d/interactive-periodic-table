@@ -1,0 +1,96 @@
+
+
+.parameters {
+    display: flex;
+    flex-direction: column;
+    // margin: auto;
+    padding-top: 3.5vmax;
+    padding-left: 1vmax;
+    // margin-left: 2vmax;
+}
+
+
+// parameter buttons
+label {
+    padding-top: 0.8vmax;
+    font-size: 0.8vmax;
+    color: rgb(0, 0, 0);
+    height: 1.45vmax;
+}
+
+.lang {
+    order: 100;
+}
+
+.set-Radioactive {
+    order: 0 !important;
+}
+
+.container {
+    order: 1;
+    display: block;
+    position: relative;
+    // padding-left: 0.5vmax;
+    // margin-bottom: 1vmax;
+    cursor: pointer;
+    font-size: 1vmax;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: relative;
+    display: inline-block;
+    // top: 0;
+    // left: 0;
+    height: 1vmax;
+    width: 1vmax;
+    background-color: rgb(216, 216, 216);
+    margin-right: 0.5vmax;
+    bottom: -0.1vmax;
+}
+
+// When the checkbox is hovered over, add a background color
+.container:hover input ~ .checkmark {
+    background-color: rgb(163, 163, 163);
+}
+
+// When the checkbox is checked, add a blue background
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.parameters>div {
+    background-color: white;
+    margin-right: 5%;
+    margin-top: 5%;
+    padding-bottom: 3%;
+}
+.parameters>div>label {
+    margin-left: 5%;
+}
+
+
+// Color types https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Tableau_p%C3%A9riodique_des_%C3%A9l%C3%A9ments.svg/1600px-Tableau_p%C3%A9riodique_des_%C3%A9l%C3%A9ments.svg.png
+
+.element.AlkaliMetal {background-color: #ff6666;}
+.element.AlkalineEarthMetal {background-color: #ffdfae;}
+.element.NobleGas {background-color: #b0efef;}
+.element.Nonmetal {background-color: #99fb99;}
+.element.Halogen {background-color: #ffff9a;}
+.element.Metalloid {background-color: #cdcd9a;}
+.element.Metal {background-color: #d4d4d4;}
+.element.TransitionMetal {background-color: #ffb7c2;}
+.element.Lanthanide {background-color: #ffc0ff;}
+.element.Actinide {background-color: #ff9acd;}
+.element.Transactinide {background-color: #fda2b0;}

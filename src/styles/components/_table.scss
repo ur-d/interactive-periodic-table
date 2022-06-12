@@ -1,0 +1,28 @@
+
+// Table parts
+.left-margin {order: 0;width: 3.5%;}
+.mid-margin {order: 2;width: 2%;}
+.right-margin {order: 10;width: 4%;}
+
+.elements-part {
+    width: 75% !important;
+    height: 47vmax;
+    order: 5;
+    margin-top: 0.8vmax;
+}
+
+.parameters-part {
+    background-color: #e7e7e7;
+    width: 15.5%;
+    order: 1;
+}
+
+
+// Logo over settings
+.logo {
+    align-content: center;
+}
+.logo-img {
+    height: 1.5vmax;
+    width: 1.5vmax;
+}

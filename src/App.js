@@ -6,18 +6,25 @@ import About from "./pages/About";
 import Secret from "./pages/Secret";
 
 const App = () => {
+  // elements info
   const [elements, setElements] = useState([]);
+  // available parameters
   const [parameters, setParameters] = useState([])
 
   useEffect(() => {
 
       // Read csv file
+      // Original csv :
+      // https://gist.githubusercontent.com/GoodmanSciences/c2dd862cd38f21b0ad36b8f96b4bf1ee/raw/1d92663004489a5b6926e944c1b3d9ec5c40900e/Periodic%2520Table%2520of%2520Elements.csv
       axios.get("./periodic_table.csv").then((res) => {
 
           // CSV to JSON
           // https://stackoverflow.com/questions/27979002/convert-csv-data-into-json-format-using-javascript
 
-          var lines = res.data.split('\r\n');
+          // remove "\r"
+          var text = res.data.replace("\r", "");
+          // use ";" as separator
+          var lines = text.split('\n');
           var keys = lines[0].split(';');
           setParameters(keys);
           var result = [];
@@ -31,7 +38,7 @@ const App = () => {
               result.push(obj);
           }
 
-          // set data
+          // send data to state
           setElements(result);
       });
   }, []);
@@ -39,11 +46,12 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Path */}
-        <Route path="/" element={<Home props={elements} parameters={parameters}/>} />
+        {/* Path in url */}
+        {/* Send data with it */}
+        {/* <Route path="/" element={<Home props={elements} parameters={parameters}/>} /> */}
         <Route path="/about" element={<About />} />
         <Route path="/secret" element={<Secret />} />
-        <Route path="*" element={<Home />} />
+        <Route path="/*" element={<Home props={elements} parameters={parameters}/>} />
       </Routes>
     </BrowserRouter>
   );

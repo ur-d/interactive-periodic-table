@@ -1,78 +1,139 @@
+// Border for testing
+
+// .table {outline: 1px solid red;}
+.element {outline: black solid 0.01vmax;}
+// .elements-part {outline: 3px solid green;}
+// .parameters-part {outline: 3px solid blue;}
+
+// Font
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     list-style: none;
 }
-  
+
+// Elements
 body {
-    background-color: #181818;
-
-    overflow: hidden;
+    background-color: #ffffff;
 }
-  
-p {
-    color: aliceblue;
+.header {
+    margin-top: 1vmax;
 }
-label {
-    color: aliceblue;
-    margin: 3%;
+.table {
+    aspect-ratio: 205/100;
+    // height: 100%;
+    width: 96.76113vmax;
+    margin:auto;
+    display: flex;
 }
-li {
-    margin: 3%;
-}
-ul {
-    padding-top: 5%;}
-
 .element {
-    background-color: bisque;
-    // height: 80%;
-    aspect-ratio: 15/20;
+    position: relative;
+    // background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-areas:
+    "N S S"
+    "R S S"
+    "E E E"
+    "M M M"
+    "O O O";
+}
+.AtomicNumber {
+    position: relative;
+    grid-area: N;
+    height: 1vmax;
+    width: 1.2vmax;
+    // margin-left: 0.07vmax;
+    // margin-top: 0.03vmax;
+    font-size: 0.85vmax;
+    // text-align: center;
+    margin-left: 0.05vmax;
+}
+.Symbol {
+    position: relative;
+    height: 2vmax;
+    width: 2.5vmax;
+    grid-area: S;
+    font-size: 1.5vmax;
+    font-weight: bold;
+    text-align: center;
+    // margin-left: 0.05vmax;
+}
+.ElementName {
+    position: relative;
+    grid-area: E;
+    font-size: 0.5vmax;
+    height: 1vmax;
+    // text-align: center;
+    // margin-left: 0.03vmax;
+}
+.AtomicMass {
+    position: relative;
+    grid-area: M;
+    height: 1vmax;
+    width: 3.77vmax;
+    font-size: 0.8vmax;
+    margin-left: 0.03vmax;
+    // text-align: center;
+}
+.Other {
+    position: relative;
+    grid-area: O;
+    height: 1vmax;
+    font-size: 0.8vmax;
+    width: 3.77vmax;
+    margin-left: 0.03vmax;
+}
+.Radioactive {
+    position: relative;
+    grid-area: R;
+    height: 1vmax;
+    width: 1vmax;
 }
 
-div.element>div {
-    height: 15px;
-    aspect-ratio: 1/2;
+div.element {
+    background-color: white;
+    // ratio = 19 / 25
+    width: 3.8vmax;
+    height: 5vmax;
+    overflow: hidden;
+    transition: transform .15s; /* Animation */
+}
+
+div.element:hover {
+    transform: scale(1.6);
+    z-index: 1;
+    box-shadow: 0px 1vmax 5vmax 0.5vmax rgba(0, 0, 0, 0.86);
 }
 
 .elements {
-    width: 75% !important;
-    // margin: auto;
-    border: 3px solid green;
-    // padding: 10px;
+    // width: 75% !important;
+    height: 100%;
+    // width: 80%;
+    // margin-right: 3.5vmax;
+    margin-bottom: 1vmax;
     display: grid;
-    // grid-template-rows: repeat(9, 11,1%);
-    // grid-template-columns: repeat(18, 5,5%);
     grid-template-areas:
-        "H . . . . . . . . . . . . . . . . He"
-        "Li Be . . . . . . . . . . B C N O F Ne"
-        "Na Mg . . . . . . . . . . Al Si P S Cl Ar"
-        "K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr"
-        "Rb Sr Y Zr Nb Mo Tc Ru Rh Pd Ag Cd In Sn Sb Te I Xe"
-        "Cs Ba . Hf Ta W Re Os Ir Pt Au Hg Tl Pb Bi Po At Rn"
-        "Fr Ra . Rf Db Sg Bh Hs Mt Ds Rg Cn Nh Fl Mc Lv Ts Og"
-        ". . . La Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm Yb Lu"
-        ". . . Ac Th Pa U Np Pu Am Cm Bk Cf Es Fm Md No Lr";
-    order: 5;
-    // flex-grow: 2;
-    aspect-ratio: 100/65;
-    grid-row-gap: 1.2% !important;
-    // grid-row-gap: 1.2%;
-    grid-column-gap: 0.7% !important;
-    // grid-column-gap: 0.7%;
+    "H . . . . . . . . . . . . . . . . He"
+    "Li Be . . . . . . . . . . B C N O F Ne"
+    "Na Mg . . . . . . . . . . Al Si P S Cl Ar"
+    "K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr"
+    "Rb Sr Y Zr Nb Mo Tc Ru Rh Pd Ag Cd In Sn Sb Te I Xe"
+    "Cs Ba . Hf Ta W Re Os Ir Pt Au Hg Tl Pb Bi Po At Rn"
+    "Fr Ra . Rf Db Sg Bh Hs Mt Ds Rg Cn Nh Fl Mc Lv Ts Og"
+    ". . . La Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm Yb Lu"
+    ". . . Ac Th Pa U Np Pu Am Cm Bk Cf Es Fm Md No Lr";
+    // order: 5;
 }
 
-.parameters {
-    border: 3px solid green;
-    width: 25%;
-    order: 1;
-    flex-grow: 2;
-}
 
-.table {
-    // padding: 1%;
-    margin: 1%;
-    aspect-ratio: 205/100;
-    border: 3px solid red;
-    // margin-right: 10%;
-    display: flex;
-    // margin: 2%;
+
+.Radioactive-img {
+    display: block;
+    height: 100%;
+    // position: initial;
+    // grid-area: R;
+    // height: 0.9vmax;
+    // width: 0.9vmax;
+    margin-left: 0.05vmax;
+    cursor: text;
 }
