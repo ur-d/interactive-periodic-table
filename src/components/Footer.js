@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div className="footer">
             {/* info */}
-            credit : moi, github (avec logo joli), version, license, etc.
+            credit : moi, github (avec logo joli), version, licence, etc.
         </div>
     );
 };
