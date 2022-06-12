@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/interactive-periodic-table/static/css/main.9d78eb68.css",
+    "main.js": "/interactive-periodic-table/static/js/main.761be9b6.js",
+    "index.html": "/interactive-periodic-table/index.html",
+    "main.9d78eb68.css.map": "/interactive-periodic-table/static/css/main.9d78eb68.css.map",
+    "main.761be9b6.js.map": "/interactive-periodic-table/static/js/main.761be9b6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9d78eb68.css",
+    "static/js/main.761be9b6.js"
+  ]
+}
