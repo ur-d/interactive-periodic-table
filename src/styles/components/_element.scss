@@ -1,7 +1,211 @@
-#other {
-    z-index: -1;
+.Element.Exemple {
+    // display: ;
+    position: relative;
+    // left: 300px;
+    // top: -800px;
+    // display: inline;
+    width: 98%;
+    height: 98%;
+    // background-color: red;
+    transition: transform .15s;
+    z-index: 2;
+
+    .ExempleInfo {
+        display: grid;
+        grid-template-areas:
+        "N S S"
+        "R S S"
+        "M M M"
+        "E E E"
+        "O O O";
+        height: 98%;
+        width: 98%;
+        margin: auto;
+        overflow: hidden;
+
+    .AtomicNumber {
+        font-size: 30px;
+        grid-area: N;
+        height: 34px;
+    }
+    .Symbol {
+        font-size: 60px;
+        grid-area: S;
+        height: 68px;
+        font-weight: 700;
+    }
+    .ElementName {
+        font-size: 20px;
+        margin: auto;
+        grid-area: E;
+        height: 34px;
+    }
+    .AtomicMass {
+        font-size: 20px;
+        margin: auto;
+        grid-area: M;
+        height: 34px;
+    }
+    .OtherInfo {
+        font-size: 16px;
+        margin: auto;
+        grid-area: O;
+        height: 34px;
+    }
+    
+}
 }
 
-.Other {
+
+.Element.Exemple:hover {
+    transform: scale(1.2);
+    z-index: 1;
+    box-shadow: 0px 1px 5px 0.5px rgba(0, 0, 0, 0.86);
+}
+
+// .Element.Actinide {
+//     position: relative;
+//     // margin-top: 10px;
+//     // top: 10px;
+// }
+
+// .Element.Lanthanide {
+//     position: relative;
+//     margin-top: 15px;
+//     // top: 10px;
+// }
+
+
+div.OtherInfo {
+    // background-color: aqua;
+}
+
+.Radioactive-img {
+    display: inline;
+    width: 17px;
+    cursor: text;
+}
+
+.Radioactive {
+    display: inline;
+    width: 20px;
+    cursor: text;
+}
+
+.Element {
+    z-index: 1;
+    width: 75px;
+    height: 92px;
+    overflow: hidden;
+    transition: transform .15s;
+    background-color: white;
+    outline: black solid 1px;
+    // padding: 1px;
+    margin: 2px;
+
+}
+
+.Element:hover {
+    transform: scale(1.6);
+    z-index: 3;
+    box-shadow: 0px 1px 5px 0.5px rgba(0, 0, 0, 0.86);
+}
+
+.Path:hover {
     z-index: 0;
 }
+
+.Path {
+    transition: none;
+    margin:auto;
+}
+
+.Info {
+    position: relative;
+    // background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-areas:
+    "N S S"
+    "R S S"
+    "M M M"
+    "E E E"
+    "O O O";
+    margin: 1px;
+    // padding: 1px;
+    // height: 99%;
+    // width: 99%;
+}
+.Info>div {
+    // color: ;
+    // filter: invert(100%);
+    // color: white;
+    // -webkit-text-fill-color: black;
+    // -webkit-text-stroke: 1px;
+    // paint-order: stroke fill;
+    // text-shadow: 0px 0px  #000;
+    // -webkit-text-fill-color: white;
+    // -webkit-text-stroke-width: 1px;
+    // -webkit-text-stroke-color: black;
+    
+}
+
+.AtomicNumber {
+    grid-area: N;
+    height: 17px;
+    // width: 30px;
+    // background-color: white;
+}
+.Symbol {
+    // margin: auto;
+    // margin-right: 100%;
+    grid-area: S;
+    height: 34px;
+    font-size: 30px;
+    font-weight: 700;
+    // background-color: white;
+}
+.ElementName {
+    margin: auto;
+    // margin-left: 10px;
+    grid-area: E;
+    height: 17px;
+    font-size: 11px;
+    // font-weight: 700;
+    // background-color: white;
+}
+.AtomicMass {
+    position: relative;
+    left: -0.5px;
+    margin: auto;
+    grid-area: M;
+    height: 17px;
+    // background-color: white;
+}
+.OtherInfo {
+    margin: auto;
+    // padding: auto;
+    grid-area: O;
+    height: 17px;
+    // width: 101%;
+    // background-color: white;
+}
+.Radioactive {
+    grid-area: R;
+    height: 17px;
+}
+
+// Color types https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Tableau_p%C3%A9riodique_des_%C3%A9l%C3%A9ments.svg/1600px-Tableau_p%C3%A9riodique_des_%C3%A9l%C3%A9ments.svg.png
+
+.Element.Other {}
+.Element.AlkaliMetal {background-color: #ff6666;}
+.Element.AlkalineEarthMetal {background-color: #ffdfae;}
+.Element.NobleGas {background-color: #b0efef;}
+.Element.Nonmetal {background-color: #99fb99;}
+.Element.Halogen {background-color: #ffff9a;}
+.Element.Metalloid {background-color: #cdcd9a;}
+.Element.Metal {background-color: #d4d4d4;}
+.Element.TransitionMetal {background-color: #ffb7c2;}
+.Element.Lanthanide {background-color: #ffc0ff;}
+.Element.Actinide {background-color: #ff9acd;}
+// .Element.Transactinide {background-color: #fda2b0;}
+.Element.Transactinide {background-color: #ffb7c2;}

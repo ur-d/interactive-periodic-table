@@ -1,5 +1,15 @@
+
+// global styles
 @import "./settings";
+
+// pages styles
+@import "./pages/tablepage";
+
+// table parts styles
+@import "./components/parameterspart";
+@import "./components/tablepart";
+
+// components styles
 @import "./components/element";
-@import "./components/parameter";
-@import "./components/table";
-@import "./components/footer";
+@import "./components/infos";
+@import "./components/parameterspart";

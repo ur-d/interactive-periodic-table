@@ -1,0 +1,141 @@
+
+.moving {
+    // margin:auto;
+    display: flex;
+    // align-content: center;
+    justify-content: center;
+}
+
+.Header {
+    // padding-top: 40px;
+}
+
+.Footer {
+    background-color: #e7e7e7;
+    // display:contents;
+    // margin-bottom: 40px;
+    // text-align: center;
+    position: relative;
+    top: 40px;
+    height: 64px;
+    // margin: auto;
+}
+
+ul {
+    position: relative;
+    top: 5px;
+    // display: flex;
+    // justify-content: center;
+    // height: 100%;
+    // width: 100%;
+}
+
+il {
+    // width: 30%;
+    height: 32px;
+    margin: auto;
+    margin-right: 40px;
+}
+
+.github {
+    img {
+        position: relative;
+        top: 10px;
+    }
+    img:hover {
+        filter: invert(50%);
+    }
+}
+
+.TablePage {
+    // display: flex;
+    // display: inline-block;
+    
+    // width: 100%;
+    // margin-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    margin: auto;
+
+    // float: right;
+
+}
+
+
+.InfoPart {
+    position: relative;
+    padding-top: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    overflow: hidden;
+}
+
+.InfoTypePart {
+    background-color: white;
+    font-size: medium;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+
+.ParametersPart {
+
+
+    width: 270px;
+    overflow: hidden;
+
+}
+
+#root {
+    display: flex;
+    // justify-content: center;
+    
+}
+
+.room {
+    overflow: hidden;
+    display: flex;
+
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    height: 17px;
+    width: 100%;
+
+    // margin-left: 10px;
+    // margin-bottom: 10px;
+    // margin-right: 20px;
+
+    .Other {background-color: white;}
+    .AlkaliMetal {background-color: #ff6666;}
+    .AlkalineEarthMetal {background-color: #ffdfae;}
+    .NobleGas {background-color: #b0efef;}
+    .Nonmetal {background-color: #99fb99;}
+    .Halogen {background-color: #ffff9a;}
+    .Metalloid {background-color: #cdcd9a;}
+    .Metal {background-color: #d4d4d4;}
+    .TransitionMetal {background-color: #ffb7c2;}
+    .Lanthanide {background-color: #ffc0ff;}
+    .Actinide {background-color: #ff9acd;}
+    .Transactinide {background-color: #fda2b0;}
+
+}
+
+.color {
+
+    // margin: auto;
+    margin-right: 12px;
+    height: 17px;
+    width: 30px;
+    outline: black solid 1px;
+}
+
+.left {
+    
+    margin-right: 50px;
+    background-color: #e7e7e7;
+}
