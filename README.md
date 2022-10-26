@@ -1,6 +1,30 @@
-# Getting Started with Create React App
+# [Interactive periodic table](https://tpe.uri.place/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+I recommend to use [Firefox](https://www.mozilla.org/) or [Chromium](https://www.chromium.org/chromium-projects/) based navigators when you use the app.\
+They can be some issues with the font size on [Safari](https://www.apple.com/safari/) or some mobile apps.
+
+## How to install the project :
+
+1. Install [Node.js with npm](https://nodejs.org/en/download/) and [Git](https://git-scm.com/downloads) on your computer.
+2. In your project folder run with your command terminal :
+```
+git clone https://github.com/ur-d/Interactive-Periodic-Table.git
+```
+3. Then in "interactive-periodic-table" run ```npm install```
+and wait until it's done.
+4. When you're done modifying, simply run ```npm run build``` and grab your app in the `build` folder.
+
+
+## Modify, add, or delete datas or languages
+
+If you want to modify element's data you can edit `public/periodic_table.csv`. (I recommend [LibreOffice](https://www.libreoffice.org/))\
+The rows list each elements and the columns each data (electronegativity, atomic radius, ...).
+
+If you want to modify traductions or add a language : `public/languages.csv`.\
+The rows list each words and the columns each language, feel free to add any language you want.
+
 
 ## Available Scripts
 
@@ -14,10 +38,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -29,15 +49,11 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### `npm run deploy`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Builds the app and sends it on github-pages.\
+It works with [gh-pages](https://www.npmjs.com/package/gh-pages) package, check for more information.
 
 ## Learn More
 
@@ -45,26 +61,3 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
