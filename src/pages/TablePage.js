@@ -8,10 +8,12 @@ import axios from "axios";
 const TablePage = () => {
     const [isLoading, setLoading] = useState(true)
 
+    // Preselected settings :
     const [colors, setColors] = useState("Type")
     const [language, setLanguage] = useState("FR")
     const [otherInfo, setOtherInfo] = useState("Electronegativity")
 
+    // constants :
     const [elements, setElements] = useState([])
     const [parameters, setParameters] = useState([])
     const [availableLanguages, setAvailableLanguages] = useState([])
@@ -19,7 +21,6 @@ const TablePage = () => {
 
     useEffect(() => {
         axios.get("./periodic_table.csv").then((res) => {
-  
             // CSV to JSON
             // https://stackoverflow.com/questions/27979002/convert-csv-data-into-json-format-using-javascript
             var text = res.data.replace("\r", "")
@@ -66,10 +67,6 @@ const TablePage = () => {
     }, [])
 
     const getData = (parameterType, data) => {
-        // setActiveSettings(data)
-        // console.log("getdata")
-        // console.log(data)
-        // console.log("/getdata")
         if (parameterType === "colors") {
             setColors(data.colors)
         }
@@ -81,6 +78,7 @@ const TablePage = () => {
         }
     }
 
+    // colors caption
     const infoRender = () => {
         if (colors === "Type") {
             return (
@@ -96,7 +94,6 @@ const TablePage = () => {
                     <div className="room"><div className="color NobleGas"></div>            {dictionary[language].NobleGas}           </div>
                     <div className="room"><div className="color Lanthanide"></div>          {dictionary[language].Lanthanide}         </div>
                     <div className="room"><div className="color Actinide"></div>            {dictionary[language].Actinide}           </div>
-                    {/* translathanide */}
                 </div>
                 )
         }
@@ -120,6 +117,7 @@ const TablePage = () => {
                 )
         }
     }
+
 
     if (isLoading) {
         return (

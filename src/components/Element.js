@@ -2,7 +2,6 @@ import React, { useState, useEffect} from 'react';
 
 const Element = ({ props, colors, language, otherInfo, dictionary }) => {
 
-
     const [otherInfoRender, setOtherInfoRender] = useState(undefined)
     const [languageRender, setLanguageRender] = useState(dictionary[language][props.AtomicNumber])
     const [backgroundColor, setBackgroundColor] = useState("")
@@ -56,14 +55,14 @@ const Element = ({ props, colors, language, otherInfo, dictionary }) => {
     const isRadioactive = () => {
         if (props.Radioactive === "yes") {
             return (
+                // image source : https://www.svgrepo.com/show/407277/radioactive.svg
                 <img className="Radioactive-img" src="./img/radioactive.svg" alt="radioactive" />
             )
         }
         else {return}
     }
-
-    // console.log(dictionary)
     
+
     return (
         <div key={props.Symbol} className={"Element " + props.Type.replace(/ /g, "")} style={{
             gridArea: props.Symbol,

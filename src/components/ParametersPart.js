@@ -2,9 +2,18 @@ import React, { useState, useEffect } from 'react';
 
 const ParametersPart = ({ onSubmit, parameters, availableLanguages, colors, language, otherInfo, dictionary }) => {
 
-    // Remove always active parameters from the "parameters" array
     const [otherParameters, setOtherParameters] = useState(["None"])
+    const spectrumParameters = ["Type", "Electronegativity", "AtomicRadius"]
     
+    const [activeSettings, setActiveSettings] = useState({
+        "colors": colors,
+        "language": language,
+        "otherInfo": otherInfo
+    });
+
+    var tmpSettings = {}
+    
+    // Remove always active and uninterresting parameters from the "parameters" array
     useEffect(() => {
         var OP = []
         const filteredParameters = ["AtomicNumber", "Symbol", "AtomicMass", "Radioactive", "Type", "Discoverer", "Year"]
@@ -22,16 +31,6 @@ const ParametersPart = ({ onSubmit, parameters, availableLanguages, colors, lang
         }
         setOtherParameters(OP)
     }, [parameters])
-
-    const spectrumParameters = ["Type", "Electronegativity", "AtomicRadius"]
-    
-    const [activeSettings, setActiveSettings] = useState({
-        "colors": colors,
-        "language": language,
-        "otherInfo": otherInfo
-    });
-    var tmpSettings = {}
-
 
     const set = (parameterType, parameter) => {
         tmpSettings = activeSettings
