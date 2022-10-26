@@ -1,119 +1,119 @@
-AtomicNumber;Symbol;ElementName;AtomicMass;NumberofNeutrons;Radioactive;Type;AtomicRadius;Electronegativity;FirstIonization;NumberOfIsotopes;Discoverer;Year;FR
-1;H;Hydrogen;1.008;0;;Nonmetal;0.79;2.2;13.5984;3;Cavendish;1766;Hydrogène
-2;He;Helium;4.002;2;;Noble Gas;0.49;;24.5874;5;Janssen;1868;Hélium
-3;Li;Lithium;6.941;4;;Alkali Metal;2.1;0.98;5.3917;5;Arfvedson;1817;Lithium
-4;Be;Beryllium;9.012;5;;Alkaline Earth Metal;1.4;1.57;9.3227;6;Vaulquelin;1798;Béryllium
-5;B;Boron;10.811;6;;Metalloid;1.2;2.04;8.298;6;Gay-Lussac;1808;Bore
-6;C;Carbon;12.011;6;;Nonmetal;0.91;2.55;11.2603;7;Prehistoric;;Carbone
-7;N;Nitrogen;14.007;7;;Nonmetal;0.75;3.04;14.5341;8;Rutherford;1772;Azote
-8;O;Oxygen;15.999;8;;Nonmetal;0.65;3.44;13.6181;8;Priestley/Scheele;1774;Oxygène
-9;F;Fluorine;18.998;10;;Halogen;0.57;3.98;17.4228;6;Moissan;1886;Fluor
-10;Ne;Neon;20.18;10;;Noble Gas;0.51;;21.5645;8;Ramsay and Travers;1898;Néon
-11;Na;Sodium;22.99;12;;Alkali Metal;2.2;0.93;5.1391;7;Davy;1807;Sodium
-12;Mg;Magnesium;24.305;12;;Alkaline Earth Metal;1.7;1.31;7.6462;8;Black;1755;Magnésium
-13;Al;Aluminum;26.982;14;;Metal;1.8;1.61;5.9858;8;Wshler;1827;Aluminium
-14;Si;Silicon;28.086;14;;Metalloid;1.5;1.9;8.1517;8;Berzelius;1824;Silicium
-15;P;Phosphorus;30.974;16;;Nonmetal;1.2;2.19;10.4867;7;BranBrand;1669;Phosphore
-16;S;Sulfur;32.065;16;;Nonmetal;1.1;2.58;10.36;10;Prehistoric;;Soufre
-17;Cl;Chlorine;35.453;18;;Halogen;0.97;3.16;12.9676;11;Scheele;1774;Chlore
-18;Ar;Argon;39.948;22;;Noble Gas;0.88;;15.7596;8;Rayleigh and Ramsay;1894;Argon
-19;K;Potassium;39.098;20;;Alkali Metal;2.8;0.82;4.3407;10;Davy;1807;Potassium
-20;Ca;Calcium;40.078;20;;Alkaline Earth Metal;2.2;1;6.1132;14;Davy;1808;Calcium
-21;Sc;Scandium;44.956;24;;Transition Metal;2.1;1.36;6.5615;15;Nilson;1878;Scandium
-22;Ti;Titanium;47.867;26;;Transition Metal;2;1.54;6.8281;9;Gregor;1791;Titane
-23;V;Vanadium;50.942;28;;Transition Metal;1.9;1.63;6.7462;9;del Rio;1801;Vanadium
-24;Cr;Chromium;51.996;28;;Transition Metal;1.9;1.66;6.7665;9;Vauquelin;1797;Chrome
-25;Mn;Manganese;54.938;30;;Transition Metal;1.8;1.55;7.434;11;Gahn, Scheele;1774;Manganèse
-26;Fe;Iron;55.845;30;;Transition Metal;1.7;1.83;7.9024;10;Prehistoric;;Fer
-27;Co;Cobalt;58.933;32;;Transition Metal;1.7;1.88;7.881;14;Brandt;1735;Cobalt
-28;Ni;Nickel;58.693;31;;Transition Metal;1.6;1.91;7.6398;11;Cronstedt;1751;Nickel
-29;Cu;Copper;63.546;35;;Transition Metal;1.6;1.9;7.7264;11;Prehistoric;;Cuivre
-30;Zn;Zinc;65.38;35;;Transition Metal;1.5;1.65;9.3942;15;Prehistoric;;Zinc
-31;Ga;Gallium;69.723;39;;Metal;1.8;1.81;5.9993;14;de Boisbaudran;1875;Gallium
-32;Ge;Germanium;72.64;41;;Metalloid;1.5;2.01;7.8994;17;Winkler;1886;Germanium
-33;As;Arsenic;74.922;42;;Metalloid;1.3;2.18;9.7886;14;Albertus Magnus;1250;Arsenic
-34;Se;Selenium;78.96;45;;Nonmetal;1.2;2.55;9.7524;20;Berzelius;1817;Sélénium
-35;Br;Bromine;79.904;45;;Halogen;1.1;2.96;11.8138;19;Balard;1826;Brome
-36;Kr;Krypton;83.798;48;;Noble Gas;1;;13.9996;23;Ramsay and Travers;1898;Krypton
-37;Rb;Rubidium;85.468;48;;Alkali Metal;3;0.82;4.1771;20;Bunsen and Kirchoff;1861;Rubidium
-38;Sr;Strontium;87.62;50;;Alkaline Earth Metal;2.5;0.95;5.6949;18;Davy;1808;Strontium
-39;Y;Yttrium;88.906;50;;Transition Metal;2.3;1.22;6.2173;21;Gadolin;1794;Yttrium
-40;Zr;Zirconium;91.224;51;;Transition Metal;2.2;1.33;6.6339;20;Klaproth;1789;Zirconium
-41;Nb;Niobium;92.906;52;;Transition Metal;2.1;1.6;6.7589;24;Hatchett;1801;Niobium
-42;Mo;Molybdenum;95.96;54;;Transition Metal;2;2.16;7.0924;20;Scheele;1778;Molybdène
-43;Tc;Technetium;98;55;yes;Transition Metal;2;1.9;7.28;23;Perrier and Segr�;1937;Technétium
-44;Ru;Ruthenium;101.07;57;;Transition Metal;1.9;2.2;7.3605;16;Klaus;1844;Ruthénium
-45;Rh;Rhodium;102.906;58;;Transition Metal;1.8;2.28;7.4589;20;Wollaston;1803;Rhodium
-46;Pd;Palladium;106.42;60;;Transition Metal;1.8;2.2;8.3369;21;Wollaston;1803;Palladium
-47;Ag;Silver;107.868;61;;Transition Metal;1.8;1.93;7.5762;27;Prehistoric;;Argent
-48;Cd;Cadmium;112.411;64;;Transition Metal;1.7;1.69;8.9938;22;Stromeyer;1817;Cadmium
-49;In;Indium;114.818;66;;Metal;2;1.78;5.7864;34;Reich and Richter;1863;Indium
-50;Sn;Tin;118.71;69;;Metal;1.7;1.96;7.3439;28;Prehistoric;;Étain
-51;Sb;Antimony;121.76;71;;Metalloid;1.5;2.05;8.6084;29;Early historic times;;Antimoine
-52;Te;Tellurium;127.6;76;;Metalloid;1.4;2.1;9.0096;29;von Reichenstein;1782;Tellure
-53;I;Iodine;126.904;74;;Halogen;1.3;2.66;10.4513;24;Courtois;1811;Iode
-54;Xe;Xenon;131.293;77;;Noble Gas;1.2;;12.1298;31;Ramsay and Travers;1898;Xénon
-55;Cs;Cesium;132.905;78;;Alkali Metal;3.3;0.79;3.8939;22;Bunsen and Kirchoff;1860;Césium
-56;Ba;Barium;137.327;81;;Alkaline Earth Metal;2.8;0.89;5.2117;25;Davy;1808;Baryum
-57;La;Lanthanum;138.905;82;;Lanthanide;2.7;1.1;5.5769;19;Mosander;1839;Lanthane
-58;Ce;Cerium;140.116;82;;Lanthanide;2.7;1.12;5.5387;19;Berzelius;1803;Cérium
-59;Pr;Praseodymium;140.908;82;;Lanthanide;2.7;1.13;5.473;15;von Welsbach;1885;Praséodyme
-60;Nd;Neodymium;144.242;84;;Lanthanide;2.6;1.14;5.525;16;von Welsbach;1885;Néodyme
-61;Pm;Promethium;145;84;yes;Lanthanide;2.6;1.13;5.582;14;Marinsky et al.;1945;Prométhium
-62;Sm;Samarium;150.36;88;;Lanthanide;2.6;1.17;5.6437;17;Boisbaudran;1879;Samarium
-63;Eu;Europium;151.964;89;;Lanthanide;2.6;1.2;5.6704;21;Demarcay;1901;Europium
-64;Gd;Gadolinium;157.25;93;;Lanthanide;2.5;1.2;6.1501;17;de Marignac;1880;Gadolinium
-65;Tb;Terbium;158.925;94;;Lanthanide;2.5;1.2;5.8638;24;Mosander;1843;Terbium
-66;Dy;Dysprosium;162.5;97;;Lanthanide;2.5;1.22;5.9389;21;de Boisbaudran;1886;Dysprosium
-67;Ho;Holmium;164.93;98;;Lanthanide;2.5;1.23;6.0215;29;Delafontaine and Soret;1878;Holmium
-68;Er;Erbium;167.259;99;;Lanthanide;2.5;1.24;6.1077;16;Mosander;1843;Erbium
-69;Tm;Thulium;168.934;100;;Lanthanide;2.4;1.25;6.1843;18;Cleve;1879;Thulium
-70;Yb;Ytterbium;173.054;103;;Lanthanide;2.4;1.1;6.2542;16;Marignac;1878;Ytterbium
-71;Lu;Lutetium;174.967;104;;Lanthanide;2.3;1.27;5.4259;22;Urbain/ von Welsbach;1907;Lutécium
-72;Hf;Hafnium;178.49;106;;Transition Metal;2.2;1.3;6.8251;17;Coster and von Hevesy;1923;Hafnium
-73;Ta;Tantalum;180.948;108;;Transition Metal;2.1;1.5;7.5496;19;Ekeberg;1801;Tantale
-74;W;Wolfram;183.84;110;;Transition Metal;2;2.36;7.864;22;J. and F. d'Elhuyar;1783;Tungstène
-75;Re;Rhenium;186.207;111;;Transition Metal;2;1.9;7.8335;21;Noddack, Berg, and Tacke;1925;Rhénium
-76;Os;Osmium;190.23;114;;Transition Metal;1.9;2.2;8.4382;19;Tennant;1803;Osmium
-77;Ir;Iridium;192.217;115;;Transition Metal;1.9;2.2;8.967;25;Tennant;1804;Iridium
-78;Pt;Platinum;195.084;117;;Transition Metal;1.8;2.28;8.9587;32;Ulloa/Wood;1735;Platine
-79;Au;Gold;196.967;118;;Transition Metal;1.8;2.54;9.2255;21;Prehistoric;;Or
-80;Hg;Mercury;200.59;121;;Transition Metal;1.8;2;10.4375;26;Prehistoric;;Mercure
-81;Tl;Thallium;204.383;123;;Metal;2.1;2.04;6.1082;28;Crookes;1861;Thallium
-82;Pb;Lead;207.2;125;;Metal;1.8;2.33;7.4167;29;Prehistoric;;Plomb
-83;Bi;Bismuth;208.98;126;;Metal;1.6;2.02;7.2856;19;Geoffroy the Younger;1753;Bismuth
-84;Po;Polonium;210;126;yes;Metal;1.5;2;8.417;34;Curie;1898;Polonium
-85;At;Astatine;210;125;yes;Metalloid;1.4;2.2;9.3;21;Corson et al.;1940;Astate
-86;Rn;Radon;222;136;yes;Noble Gas;1.3;;10.7485;20;Dorn;1900;Radon
-87;Fr;Francium;223;136;yes;Alkali Metal;;0.7;4.0727;21;Perey;1939;Francium
-88;Ra;Radium;226;138;yes;Alkaline Earth Metal;;0.9;5.2784;15;Pierre and Marie Curie;1898;Radium
-89;Ac;Actinium;227;138;yes;Actinide;;1.1;5.17;11;Debierne/Giesel;1899;Actinium
-90;Th;Thorium;232.038;142;yes;Actinide;;1.3;6.3067;12;Berzelius;1828;Thorium
-91;Pa;Protactinium;231.036;140;yes;Actinide;;1.5;5.89;14;Hahn and Meitner;1917;Protactinium
-92;U;Uranium;238.029;146;yes;Actinide;;1.38;6.1941;15;Peligot;1841;Uranium
-93;Np;Neptunium;237;144;yes;Actinide;;1.36;6.2657;153;McMillan and Abelson;1940;Neptunium
-94;Pu;Plutonium;244;150;yes;Actinide;;1.28;6.0262;163;Seaborg et al.;1940;Plutonium
-95;Am;Americium;243;148;yes;Actinide;;1.3;5.9738;133;Seaborg et al.;1944;Américium
-96;Cm;Curium;247;151;yes;Actinide;;1.3;5.9915;133;Seaborg et al.;1944;Curium
-97;Bk;Berkelium;247;150;yes;Actinide;;1.3;6.1979;83;Seaborg et al.;1949;Berkélium
-98;Cf;Californium;251;153;yes;Actinide;;1.3;6.2817;123;Seaborg et al.;1950;Californium
-99;Es;Einsteinium;252;153;yes;Actinide;;1.3;6.42;123;Ghiorso et al.;1952;Einsteinium
-100;Fm;Fermium;257;157;yes;Actinide;;1.3;6.5;103;Ghiorso et al.;1953;Fermium
-101;Md;Mendelevium;258;157;yes;Actinide;;1.3;6.58;33;Ghiorso et al.;1955;Mendélévium
-102;No;Nobelium;259;157;yes;Actinide;;1.3;6.65;73;Ghiorso et al.;1958;Nobélium
-103;Lr;Lawrencium;262;159;yes;Actinide;;;;203;Ghiorso et al.;1961;Lawrencium
-104;Rf;Rutherfordium;261;157;yes;Transactinide;;;;;Ghiorso et al.;1969;Rutherfordium
-105;Db;Dubnium;262;157;yes;Transactinide;;;;;Ghiorso et al.;1970;Dubnium
-106;Sg;Seaborgium;266;160;yes;Transactinide;;;;;Ghiorso et al.;1974;Seaborgium
-107;Bh;Bohrium;264;157;yes;Transactinide;;;;;Armbruster and M�nzenberg;1981;Bohrium
-108;Hs;Hassium;267;159;yes;Transactinide;;;;;Armbruster and M�nzenberg;1983;Hassium
-109;Mt;Meitnerium;268;159;yes;Transactinide;;;;;GSI, Darmstadt, West Germany;1982;Meitnérium
-110;Ds ;Darmstadtium ;271;161;yes;Transactinide;;;;;;1994;Darmstadtium
-111;Rg ;Roentgenium ;272;161;yes;Transactinide;;;;;;1994;Roentgenium
-112;Cn ;Copernicium ;285;173;yes;Transactinide;;;;;;1996;Copernicium
-113;Nh;Nihonium;284;171;yes;Metal;;;;;;2004;Nihonium
-114;Fl;Flerovium;289;175;yes;Metal;;;;;;1999;Flérovium
-115;Mc;Moscovium;288;173;yes;Metal;;;;;;2010;Moscovium
-116;Lv;Livermorium;292;176;yes;Metal;;;;;;2000;Livermorium
-117;Ts;Tennessine;295;178;yes;Metal;;;;;;2010;Tennesse
-118;Og;Oganesson;294;176;yes;Noble Gas;;;;;;2006;Oganesson
+AtomicNumber;Symbol;ElementName;AtomicMass;Radioactive;Type;Electronegativity;AtomicRadius;OxidationState;FirstIonization;NumberOfIsotopes;Discoverer;Year;NumberofNeutrons
+1;H;Hydrogen;1.008;;Other;2.2;0.79;1;13.5984;3;Cavendish;1766;0
+2;He;Helium;4.002;;Noble Gas;;0.49;0;24.5874;5;Janssen;1868;2
+3;Li;Lithium;6.941;;Alkali Metal;0.98;2.1;1;5.3917;5;Arfvedson;1817;4
+4;Be;Beryllium;9.012;;Alkaline Earth Metal;1.57;1.4;2;9.3227;6;Vaulquelin;1798;5
+5;B;Boron;10.811;;Metalloid;2.04;1.2;3;8.298;6;Gay-Lussac;1808;6
+6;C;Carbon;12.011;;Nonmetal;2.55;0.91;4,-4;11.2603;7;Prehistoric;;6
+7;N;Nitrogen;14.007;;Nonmetal;3.04;0.75;3,-3;14.5341;8;Rutherford;1772;7
+8;O;Oxygen;15.999;;Nonmetal;3.44;0.65;-2;13.6181;8;Priestley/Scheele;1774;8
+9;F;Fluorine;18.998;;Halogen;3.98;0.57;-1;17.4228;6;Moissan;1886;10
+10;Ne;Neon;20.18;;Noble Gas;;0.51;0;21.5645;8;Ramsay and Travers;1898;10
+11;Na;Sodium;22.99;;Alkali Metal;0.93;2.2;1;5.1391;7;Davy;1807;12
+12;Mg;Magnesium;24.305;;Alkaline Earth Metal;1.31;1.7;2;7.6462;8;Black;1755;12
+13;Al;Aluminum;26.982;;Metal;1.61;1.8;3;5.9858;8;Wshler;1827;14
+14;Si;Silicon;28.086;;Metalloid;1.9;1.5;4;8.1517;8;Berzelius;1824;14
+15;P;Phosphorus;30.974;;Nonmetal;2.19;1.2;5;10.4867;7;BranBrand;1669;16
+16;S;Sulfur;32.065;;Nonmetal;2.58;1.1;6;10.36;10;Prehistoric;;16
+17;Cl;Chlorine;35.453;;Halogen;3.16;0.97;-1;12.9676;11;Scheele;1774;18
+18;Ar;Argon;39.948;;Noble Gas;;0.88;0;15.7596;8;Rayleigh and Ramsay;1894;22
+19;K;Potassium;39.098;;Alkali Metal;0.82;2.8;1;4.3407;10;Davy;1807;20
+20;Ca;Calcium;40.078;;Alkaline Earth Metal;1;2.2;2;6.1132;14;Davy;1808;20
+21;Sc;Scandium;44.956;;Transition Metal;1.36;2.1;3;6.5615;15;Nilson;1878;24
+22;Ti;Titanium;47.867;;Transition Metal;1.54;2;3;6.8281;9;Gregor;1791;26
+23;V;Vanadium;50.942;;Transition Metal;1.63;1.9;5;6.7462;9;del Rio;1801;28
+24;Cr;Chromium;51.996;;Transition Metal;1.66;1.9;3;6.7665;9;Vauquelin;1797;28
+25;Mn;Manganese;54.938;;Transition Metal;1.55;1.8;2;7.434;11;Gahn, Scheele;1774;30
+26;Fe;Iron;55.845;;Transition Metal;1.83;1.7;3;7.9024;10;Prehistoric;;30
+27;Co;Cobalt;58.933;;Transition Metal;1.88;1.7;2;7.881;14;Brandt;1735;32
+28;Ni;Nickel;58.693;;Transition Metal;1.91;1.6;2;7.6398;11;Cronstedt;1751;31
+29;Cu;Copper;63.546;;Transition Metal;1.9;1.6;2;7.7264;11;Prehistoric;;35
+30;Zn;Zinc;65.38;;Transition Metal;1.65;1.5;2;9.3942;15;Prehistoric;;35
+31;Ga;Gallium;69.723;;Metal;1.81;1.8;3;5.9993;14;de Boisbaudran;1875;39
+32;Ge;Germanium;72.64;;Metalloid;2.01;1.5;4;7.8994;17;Winkler;1886;41
+33;As;Arsenic;74.922;;Metalloid;2.18;1.3;3;9.7886;14;Albertus Magnus;1250;42
+34;Se;Selenium;78.96;;Nonmetal;2.55;1.2;4;9.7524;20;Berzelius;1817;45
+35;Br;Bromine;79.904;;Halogen;2.96;1.1;-1;11.8138;19;Balard;1826;45
+36;Kr;Krypton;83.798;;Noble Gas;;1;0;13.9996;23;Ramsay and Travers;1898;48
+37;Rb;Rubidium;85.468;;Alkali Metal;0.82;3;1;4.1771;20;Bunsen and Kirchoff;1861;48
+38;Sr;Strontium;87.62;;Alkaline Earth Metal;0.95;2.5;2;5.6949;18;Davy;1808;50
+39;Y;Yttrium;88.906;;Transition Metal;1.22;2.3;3;6.2173;21;Gadolin;1794;50
+40;Zr;Zirconium;91.224;;Transition Metal;1.33;2.2;4;6.6339;20;Klaproth;1789;51
+41;Nb;Niobium;92.906;;Transition Metal;1.6;2.1;5;6.7589;24;Hatchett;1801;52
+42;Mo;Molybdenum;95.96;;Transition Metal;2.16;2;6;7.0924;20;Scheele;1778;54
+43;Tc;Technetium;98;yes;Transition Metal;1.9;2;7;7.28;23;Perrier and Segr�;1937;55
+44;Ru;Ruthenium;101.07;;Transition Metal;2.2;1.9;3,4;7.3605;16;Klaus;1844;57
+45;Rh;Rhodium;102.906;;Transition Metal;2.28;1.8;3;7.4589;20;Wollaston;1803;58
+46;Pd;Palladium;106.42;;Transition Metal;2.2;1.8;2;8.3369;21;Wollaston;1803;60
+47;Ag;Silver;107.868;;Transition Metal;1.93;1.8;1;7.5762;27;Prehistoric;;61
+48;Cd;Cadmium;112.411;;Transition Metal;1.69;1.7;2;8.9938;22;Stromeyer;1817;64
+49;In;Indium;114.818;;Metal;1.78;2;3;5.7864;34;Reich and Richter;1863;66
+50;Sn;Tin;118.71;;Metal;1.96;1.7;4;7.3439;28;Prehistoric;;69
+51;Sb;Antimony;121.76;;Metalloid;2.05;1.5;3;8.6084;29;Early historic times;;71
+52;Te;Tellurium;127.6;;Metalloid;2.1;1.4;4;9.0096;29;von Reichenstein;1782;76
+53;I;Iodine;126.904;;Halogen;2.66;1.3;-1;10.4513;24;Courtois;1811;74
+54;Xe;Xenon;131.293;;Noble Gas;;1.2;0;12.1298;31;Ramsay and Travers;1898;77
+55;Cs;Cesium;132.905;;Alkali Metal;0.79;3.3;1;3.8939;22;Bunsen and Kirchoff;1860;78
+56;Ba;Barium;137.327;;Alkaline Earth Metal;0.89;2.8;2;5.2117;25;Davy;1808;81
+57;La;Lanthanum;138.905;;Lanthanide;1.1;2.7;3;5.5769;19;Mosander;1839;82
+58;Ce;Cerium;140.116;;Lanthanide;1.12;2.7;3;5.5387;19;Berzelius;1803;82
+59;Pr;Praseodymium;140.908;;Lanthanide;1.13;2.7;4;5.473;15;von Welsbach;1885;82
+60;Nd;Neodymium;144.242;;Lanthanide;1.14;2.6;3;5.525;16;von Welsbach;1885;84
+61;Pm;Promethium;145;yes;Lanthanide;1.13;2.6;3;5.582;14;Marinsky et al.;1945;84
+62;Sm;Samarium;150.36;;Lanthanide;1.17;2.6;3;5.6437;17;Boisbaudran;1879;88
+63;Eu;Europium;151.964;;Lanthanide;1.2;2.6;3;5.6704;21;Demarcay;1901;89
+64;Gd;Gadolinium;157.25;;Lanthanide;1.2;2.5;3;6.1501;17;de Marignac;1880;93
+65;Tb;Terbium;158.925;;Lanthanide;1.2;2.5;3;5.8638;24;Mosander;1843;94
+66;Dy;Dysprosium;162.5;;Lanthanide;1.22;2.5;3;5.9389;21;de Boisbaudran;1886;97
+67;Ho;Holmium;164.93;;Lanthanide;1.23;2.5;3;6.0215;29;Delafontaine and Soret;1878;98
+68;Er;Erbium;167.259;;Lanthanide;1.24;2.5;3;6.1077;16;Mosander;1843;99
+69;Tm;Thulium;168.934;;Lanthanide;1.25;2.4;3;6.1843;18;Cleve;1879;100
+70;Yb;Ytterbium;173.054;;Lanthanide;1.1;2.4;3;6.2542;16;Marignac;1878;103
+71;Lu;Lutetium;174.967;;Lanthanide;1.27;2.3;3;5.4259;22;Urbain/ von Welsbach;1907;104
+72;Hf;Hafnium;178.49;;Transition Metal;1.3;2.2;4;6.8251;17;Coster and von Hevesy;1923;106
+73;Ta;Tantalum;180.948;;Transition Metal;1.5;2.1;5;7.5496;19;Ekeberg;1801;108
+74;W;Wolfram;183.84;;Transition Metal;2.36;2;6;7.864;22;J. and F. d'Elhuyar;1783;110
+75;Re;Rhenium;186.207;;Transition Metal;1.9;2;7;7.8335;21;Noddack, Berg, and Tacke;1925;111
+76;Os;Osmium;190.23;;Transition Metal;2.2;1.9;4;8.4382;19;Tennant;1803;114
+77;Ir;Iridium;192.217;;Transition Metal;2.2;1.9;4;8.967;25;Tennant;1804;115
+78;Pt;Platinum;195.084;;Transition Metal;2.28;1.8;4;8.9587;32;Ulloa/Wood;1735;117
+79;Au;Gold;196.967;;Transition Metal;2.54;1.8;4;9.2255;21;Prehistoric;;118
+80;Hg;Mercury;200.59;;Transition Metal;2;1.8;2;10.4375;26;Prehistoric;;121
+81;Tl;Thallium;204.383;;Metal;2.04;2.1;1;6.1082;28;Crookes;1861;123
+82;Pb;Lead;207.2;;Metal;2.33;1.8;2;7.4167;29;Prehistoric;;125
+83;Bi;Bismuth;208.98;;Metal;2.02;1.6;3;7.2856;19;Geoffroy the Younger;1753;126
+84;Po;Polonium;210;yes;Metal;2;1.5;4;8.417;34;Curie;1898;126
+85;At;Astatine;210;yes;Metalloid;2.2;1.4;-1;9.3;21;Corson et al.;1940;125
+86;Rn;Radon;222;yes;Noble Gas;;1.3;0;10.7485;20;Dorn;1900;136
+87;Fr;Francium;223;yes;Alkali Metal;0.7;;1;4.0727;21;Perey;1939;136
+88;Ra;Radium;226;yes;Alkaline Earth Metal;0.9;;2;5.2784;15;Pierre and Marie Curie;1898;138
+89;Ac;Actinium;227;yes;Actinide;1.1;;3;5.17;11;Debierne/Giesel;1899;138
+90;Th;Thorium;232.038;yes;Actinide;1.3;;4;6.3067;12;Berzelius;1828;142
+91;Pa;Protactinium;231.036;yes;Actinide;1.5;;5;5.89;14;Hahn and Meitner;1917;140
+92;U;Uranium;238.029;yes;Actinide;1.38;;6;6.1941;15;Peligot;1841;146
+93;Np;Neptunium;237;yes;Actinide;1.36;;5;6.2657;153;McMillan and Abelson;1940;144
+94;Pu;Plutonium;244;yes;Actinide;1.28;;4;6.0262;163;Seaborg et al.;1940;150
+95;Am;Americium;243;yes;Actinide;1.3;;4;5.9738;133;Seaborg et al.;1944;148
+96;Cm;Curium;247;yes;Actinide;1.3;;3;5.9915;133;Seaborg et al.;1944;151
+97;Bk;Berkelium;247;yes;Actinide;1.3;;3;6.1979;83;Seaborg et al.;1949;150
+98;Cf;Californium;251;yes;Actinide;1.3;;3;6.2817;123;Seaborg et al.;1950;153
+99;Es;Einsteinium;252;yes;Actinide;1.3;;;6.42;123;Ghiorso et al.;1952;153
+100;Fm;Fermium;257;yes;Actinide;1.3;;;6.5;103;Ghiorso et al.;1953;157
+101;Md;Mendelevium;258;yes;Actinide;1.3;;;6.58;33;Ghiorso et al.;1955;157
+102;No;Nobelium;259;yes;Actinide;1.3;;;6.65;73;Ghiorso et al.;1958;157
+103;Lr;Lawrencium;262;yes;Actinide;;;;;203;Ghiorso et al.;1961;159
+104;Rf;Rutherfordium;261;yes;Transactinide;;;;;;Ghiorso et al.;1969;157
+105;Db;Dubnium;262;yes;Transactinide;;;;;;Ghiorso et al.;1970;157
+106;Sg;Seaborgium;266;yes;Transactinide;;;;;;Ghiorso et al.;1974;160
+107;Bh;Bohrium;264;yes;Transactinide;;;;;;Armbruster and M�nzenberg;1981;157
+108;Hs;Hassium;267;yes;Transactinide;;;;;;Armbruster and M�nzenberg;1983;159
+109;Mt;Meitnerium;268;yes;Transactinide;;;;;;GSI, Darmstadt, West Germany;1982;159
+110;Ds;Darmstadtium ;271;yes;Transactinide;;;;;;;1994;161
+111;Rg;Roentgenium ;272;yes;Transactinide;;;;;;;1994;161
+112;Cn;Copernicium ;285;yes;Transactinide;;;;;;;1996;173
+113;Nh;Nihonium;284;yes;Metal;;;;;;;2004;171
+114;Fl;Flerovium;289;yes;Metal;;;;;;;1999;175
+115;Mc;Moscovium;288;yes;Metal;;;;;;;2010;173
+116;Lv;Livermorium;292;yes;Metal;;;;;;;2000;176
+117;Ts;Tennessine;295;yes;Metal;;;;;;;2010;178
+118;Og;Oganesson;294;yes;Noble Gas;;;;;;;2006;176

@@ -1,0 +1,156 @@
+Languages;EN;FR
+PTEI;PTE;TPE
+None;None;Vide
+AtomicNumber;Atomic number;Numéro atomique
+Symbol;Symbol;Symbole
+ElementNameEN;Name;Nom
+AtomicMass;Atomic mass;Masse atomique
+Radioactive;Radioactive;Radioactif
+Type;Type;Type
+NumberofNeutrons;Number of neutrons;Nombre de neutrons
+AtomicRadius;Atomic radius;Rayon atomique
+Electronegativity;Electronegativity;Électronégativité
+OxidationState;Oxidation state;État d’oxydation
+FirstIonization;First Ionization;Energie d’ionisiation
+NumberOfIsotopes;Number of isotopes;Nombre d’isotopes
+Discoverer;Discoverer;Découvreur
+Year;Year;Année
+Other;Other;Autre
+AlkaliMetal;Alkali metal;Métal alcalin
+AlkalineEarthMetal;Alkaline earth metal;Métal alcalino-terreux
+TransitionMetal;Transition metal;Métal de transition
+Metal;Metal;Métal
+Metalloid;Metalloid;Métalloïde
+Nonmetal;Nonmetal;Non-métal
+Halogen;Halogen;Halogène
+NobleGas;Noble Gas;Gaz noble
+Lanthanide;Lanthanide;Lanthanide
+Actinide;Actinide;Actinide
+LowElectronegativity;Low electronegativity;Électronégativité basse
+HighElectronegativity;High electronegativity;Électronégativité haute
+LowAtomicRadius;Low atomic radius;Rayon atomique bas
+HighAtomicRadius;High atomic radius;Rayon atomique haut
+UnknownAtomicRadius;Unknown atomic radius;Rayon atomique inconnu
+Exemple;Exemple;Exemple
+Data;Data;Donnée
+Color;Color;Couleur
+Language;Language;Langue
+MWL;Made with ❤ by Uri;Fait avec ❤ par Uri
+H;Hydrogen;Hydrogène
+He;Helium;Hélium
+Li;Lithium;Lithium
+Be;Beryllium;Béryllium
+B;Boron;Bore
+C;Carbon;Carbone
+N;Nitrogen;Azote
+O;Oxygen;Oxygène
+F;Fluorine;Fluor
+Ne;Neon;Néon
+Na;Sodium;Sodium
+Mg;Magnesium;Magnésium
+Al;Aluminum;Aluminium
+Si;Silicon;Silicium
+P;Phosphorus;Phosphore
+S;Sulfur;Soufre
+Cl;Chlorine;Chlore
+Ar;Argon;Argon
+K;Potassium;Potassium
+Ca;Calcium;Calcium
+Sc;Scandium;Scandium
+Ti;Titanium;Titane
+V;Vanadium;Vanadium
+Cr;Chromium;Chrome
+Mn;Manganese;Manganèse
+Fe;Iron;Fer
+Co;Cobalt;Cobalt
+Ni;Nickel;Nickel
+Cu;Copper;Cuivre
+Zn;Zinc;Zinc
+Ga;Gallium;Gallium
+Ge;Germanium;Germanium
+As;Arsenic;Arsenic
+Se;Selenium;Sélénium
+Br;Bromine;Brome
+Kr;Krypton;Krypton
+Rb;Rubidium;Rubidium
+Sr;Strontium;Strontium
+Y;Yttrium;Yttrium
+Zr;Zirconium;Zirconium
+Nb;Niobium;Niobium
+Mo;Molybdenum;Molybdène
+Tc;Technetium;Technétium
+Ru;Ruthenium;Ruthénium
+Rh;Rhodium;Rhodium
+Pd;Palladium;Palladium
+Ag;Silver;Argent
+Cd;Cadmium;Cadmium
+In;Indium;Indium
+Sn;Tin;Étain
+Sb;Antimony;Antimoine
+Te;Tellurium;Tellure
+I;Iodine;Iode
+Xe;Xenon;Xénon
+Cs;Cesium;Césium
+Ba;Barium;Baryum
+La;Lanthanum;Lanthane
+Ce;Cerium;Cérium
+Pr;Praseodymium;Praséodyme
+Nd;Neodymium;Néodyme
+Pm;Promethium;Prométhium
+Sm;Samarium;Samarium
+Eu;Europium;Europium
+Gd;Gadolinium;Gadolinium
+Tb;Terbium;Terbium
+Dy;Dysprosium;Dysprosium
+Ho;Holmium;Holmium
+Er;Erbium;Erbium
+Tm;Thulium;Thulium
+Yb;Ytterbium;Ytterbium
+Lu;Lutetium;Lutécium
+Hf;Hafnium;Hafnium
+Ta;Tantalum;Tantale
+W;Wolfram;Tungstène
+Re;Rhenium;Rhénium
+Os;Osmium;Osmium
+Ir;Iridium;Iridium
+Pt;Platinum;Platine
+Au;Gold;Or
+Hg;Mercury;Mercure
+Tl;Thallium;Thallium
+Pb;Lead;Plomb
+Bi;Bismuth;Bismuth
+Po;Polonium;Polonium
+At;Astatine;Astate
+Rn;Radon;Radon
+Fr;Francium;Francium
+Ra;Radium;Radium
+Ac;Actinium;Actinium
+Th;Thorium;Thorium
+Pa;Protactinium;Protactinium
+U;Uranium;Uranium
+Np;Neptunium;Neptunium
+Pu;Plutonium;Plutonium
+Am;Americium;Américium
+Cm;Curium;Curium
+Bk;Berkelium;Berkélium
+Cf;Californium;Californium
+Es;Einsteinium;Einsteinium
+Fm;Fermium;Fermium
+Md;Mendelevium;Mendélévium
+No;Nobelium;Nobélium
+Lr;Lawrencium;Lawrencium
+Rf;Rutherfordium;Rutherfordium
+Db;Dubnium;Dubnium
+Sg;Seaborgium;Seaborgium
+Bh;Bohrium;Bohrium
+Hs;Hassium;Hassium
+Mt;Meitnerium;Meitnérium
+Ds;Darmstadtium;Darmstadtium
+Rg;Roentgenium;Roentgenium
+Cn;Copernicium;Copernicium
+Nh;Nihonium;Nihonium
+Fl;Flerovium;Flérovium
+Mc;Moscovium;Moscovium
+Lv;Livermorium;Livermorium
+Ts;Tennessine;Tennesse
+Og;Oganesson;Oganesson
