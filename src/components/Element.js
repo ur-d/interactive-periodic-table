@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect} from 'react';
 
 const Element = ({ props, colors, language, otherInfo, dictionary }) => {
 
@@ -11,23 +11,23 @@ const Element = ({ props, colors, language, otherInfo, dictionary }) => {
     
     useEffect(() => {
         setOtherInfoRender(props[otherInfo])
-    }, [otherInfo]);
+    }, [otherInfo, props]);
 
     useEffect(() => {
         setLanguageRender(dictionary[language][props.Symbol])
-    }, [language])
+    }, [language, dictionary, props.Symbol])
 
     useEffect(() => {
-        if (colors == "Type") {
+        if (colors === "Type") {
             setBackgroundColor("")
         }
 
-        if (colors == "AtomicRadius") {
+        if (colors === "AtomicRadius") {
             if (props.AtomicRadius !== "") {
                 var product = parseFloat(props.AtomicRadius) * 280;
-                var product = product / 3.5;
+                product = product / 3.5;
                 var product2 = product - 255;
-                var product2 = product2 * -1;
+                product2 = product2 * -1;
                 // show color for the spectrum
                 setBackgroundColor(`rgb(${product/1.3},${product2},${product})`)
             }
@@ -37,12 +37,12 @@ const Element = ({ props, colors, language, otherInfo, dictionary }) => {
             }
         }
 
-        if (colors == "Electronegativity") {
+        if (colors === "Electronegativity") {
             if (props.Electronegativity !== "") {
-                var product = parseFloat(props.Electronegativity) * 240;
-                var product = product / 3;
-                var product2 = product - 255;
-                var product2 = product2 * -1;
+                product = parseFloat(props.Electronegativity) * 240;
+                product = product / 3;
+                product2 = product - 255;
+                product2 = product2 * -1;
                 // show color for the spectrum
                 setBackgroundColor(`rgb(${product},${product2},${product2})`)
             }
@@ -51,7 +51,7 @@ const Element = ({ props, colors, language, otherInfo, dictionary }) => {
                 setBackgroundColor("white")
             }
         }
-    }, [colors])
+    }, [colors, props.Electronegativity, props.AtomicRadius])
 
     const isRadioactive = () => {
         if (props.Radioactive === "yes") {

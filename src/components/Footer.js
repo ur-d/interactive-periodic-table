@@ -17,7 +17,7 @@ const Footer = ({language, dictionary}) => {
                 </il>
                 <il className="github">
                         {/* interactive periodic table v0.3 */}
-                    <a target="_blank" href="https://github.com/ur-d/interactive-periodic-table">
+                    <a target="_blank" rel="noreferrer" href="https://github.com/ur-d/interactive-periodic-table">
                         <img src="./img/GitHub-Mark-32px.png" alt="Github Logo" />
                     </a>
                 </il>
