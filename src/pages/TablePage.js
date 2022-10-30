@@ -100,19 +100,19 @@ const TablePage = () => {
         else if (colors === "AtomicRadius") {
             return (
                 <div className="InfoTypePart">
-                    not final colors
-                    <div className="room"><div className="color"></div>     {dictionary[language].LowAtomicRadius}    </div>
-                    <div className="room"><div className="color"></div>     {dictionary[language].HighAtomicRadius}   </div>
-                    <div className="room"><div className="color Other"></div>     {dictionary[language].UnknownAtomicRadius}   </div>
+                    <div className="room">not final colors</div>
+                    <div className="room"><div className="color" style={{backgroundColor: "rgb(30, 216, 39)"}}></div>         {dictionary[language].LowAtomicRadius}      </div>
+                    <div className="room"><div className="color" style={{backgroundColor: "rgb(203, 0, 255)"}}></div>         {dictionary[language].HighAtomicRadius}     </div>
+                    <div className="room"><div className="color Other"></div>   {dictionary[language].UnknownAtomicRadius}  </div>
                 </div>
                 )
         }
         else if (colors === "Electronegativity") {
             return (
                 <div className="InfoTypePart">
-                    not final colors
-                    <div className="room"><div className="color"></div>     {dictionary[language].LowElectronegativity}     </div>
-                    <div className="room"><div className="color"></div>     {dictionary[language].HighElectronegativity}    </div>
+                    <div className="room">not final colors</div>
+                    <div className="room"><div className="color" style={{backgroundColor: "rgb(50, 199, 239)"}}></div>     {dictionary[language].LowElectronegativity}     </div>
+                    <div className="room"><div className="color" style={{backgroundColor: "rgb(255, 0, 0)"}}></div>     {dictionary[language].HighElectronegativity}    </div>
                 </div>
                 )
         }

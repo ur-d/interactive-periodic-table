@@ -24,18 +24,20 @@
 ul {
     position: relative;
     top: 5px;
+    display: inline;
     // display: flex;
     // justify-content: center;
     // height: 100%;
     // width: 100%;
+    li {
+        display: inline;
+        // width: 30%;
+        height: 32px;
+        margin: auto;
+        margin-right: 40px;
+    }
 }
 
-il {
-    // width: 30%;
-    height: 32px;
-    margin: auto;
-    margin-right: 40px;
-}
 
 .github {
     img {

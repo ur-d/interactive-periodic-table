@@ -19,9 +19,11 @@ const Element = ({ props, colors, language, otherInfo, dictionary }) => {
     useEffect(() => {
         if (colors === "Type") {
             setBackgroundColor("")
+            setColor("")
         }
 
         if (colors === "AtomicRadius") {
+            setColor("")
             if (props.AtomicRadius !== "") {
                 var product = parseFloat(props.AtomicRadius) * 280;
                 product = product / 3.5;
@@ -29,6 +31,9 @@ const Element = ({ props, colors, language, otherInfo, dictionary }) => {
                 product2 = product2 * -1;
                 // show color for the spectrum
                 setBackgroundColor(`rgb(${product/1.3},${product2},${product})`)
+                if (props.AtomicRadius >= 1.5) {
+                    setColor("white")
+                }
             }
             else {
                 // show white
@@ -37,13 +42,17 @@ const Element = ({ props, colors, language, otherInfo, dictionary }) => {
         }
 
         if (colors === "Electronegativity") {
+            setColor("")
             if (props.Electronegativity !== "") {
                 product = parseFloat(props.Electronegativity) * 240;
                 product = product / 3;
                 product2 = product - 255;
                 product2 = product2 * -1;
                 // show color for the spectrum
-                setBackgroundColor(`rgb(${product},${product2},${product2})`)
+                setBackgroundColor(`rgb(${product*0.89},${product2},${product2*1.2})`)
+                if (props.Electronegativity >= 1.6) {
+                    setColor("white")
+                }
             }
             else {
                 // show white
