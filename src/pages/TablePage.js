@@ -1,25 +1,29 @@
 import React, { useState, useEffect } from "react";
 import TablePart from "../components/TablePart";
 import ParametersPart from "../components/ParametersPart";
-import Header from "../components/Header";
 import Footer from "../components/Footer";
 import axios from "axios";
 
+// The main components, reads the databases, calls the parts, and render the colors caption
 const TablePage = () => {
-    const [isLoading, setLoading] = useState(true)
-
+    
     // Preselected settings :
-    const [colors, setColors] = useState("Type")
-    const [language, setLanguage] = useState("FR")
     const [otherInfo, setOtherInfo] = useState("Electronegativity")
-
+    const [language, setLanguage] = useState("FR")
+    const [colors, setColors] = useState(false)
+    
     // constants :
     const [elements, setElements] = useState([])
     const [parameters, setParameters] = useState([])
     const [availableLanguages, setAvailableLanguages] = useState([])
     const [dictionary, setDictionary] = useState({})
+    
+    // To let the website reads the databases
+    const [isLoading, setLoading] = useState(true)
 
+    // Reads the databases
     useEffect(() => {
+        // The datas
         axios.get("./periodic_table.csv").then((res) => {
             // CSV to JSON
             // https://stackoverflow.com/questions/27979002/convert-csv-data-into-json-format-using-javascript
@@ -40,6 +44,7 @@ const TablePage = () => {
             setElements(result)
         })
 
+        // The languages
         axios.get("./languages.csv").then((res) => {
             var csv = res.data.replace("\r", "")
             var slices = csv.split("\n")
@@ -49,23 +54,35 @@ const TablePage = () => {
             for (let k = 1; k < slices.length; k++) {
                 keys.push(slices[k].split(';')[0])
             }
+            var obj = {}
             for (let i = 1; i < slices[0].split(';').length; i++) {
+                obj = {}
                 langs.push(slices[0].split(';')[i])
-                var obj = {}
                 for (let j = 1; j < slices.length - 1; j++) {
                     obj[keys[j-1]] = slices[j].split(';')[i]
                 }
                 result[langs[i-1]] = obj
             }
 
+            // Set it lifetime
             setAvailableLanguages(langs)
             setDictionary(result)
         })
+        // Wait for the read to finish
         setTimeout(() => {
             setLoading(false)
         }, 300);
     }, [])
 
+    // Change tab title with language
+    useEffect(() => {
+        if (isLoading) {
+            return
+        }
+        document.title = dictionary[language].PTEI;
+    }, [language, dictionary, isLoading])
+
+    // Fonctions to send the selected datas from ParametersPart to here
     const getData = (parameterType, data) => {
         if (parameterType === "colors") {
             setColors(data.colors)
@@ -78,9 +95,10 @@ const TablePage = () => {
         }
     }
 
-    // colors caption
+    // Colors caption
     const infoRender = () => {
-        if (colors === "Type") {
+        // Type colors
+        if (colors === false) {
             return (
                 <div className="InfoTypePart">
                     <div className="room"><div className="color Other"></div>               {dictionary[language].Other}              </div>
@@ -97,28 +115,25 @@ const TablePage = () => {
                 </div>
                 )
         }
-        else if (colors === "AtomicRadius") {
+        // Grandient colors
+        else if (colors === true) {
             return (
                 <div className="InfoTypePart">
-                    <div className="room">not final colors</div>
-                    <div className="room"><div className="color" style={{backgroundColor: "rgb(30, 216, 39)"}}></div>         {dictionary[language].LowAtomicRadius}      </div>
-                    <div className="room"><div className="color" style={{backgroundColor: "rgb(203, 0, 255)"}}></div>         {dictionary[language].HighAtomicRadius}     </div>
-                    <div className="room"><div className="color Other"></div>   {dictionary[language].UnknownAtomicRadius}  </div>
-                </div>
-                )
-        }
-        else if (colors === "Electronegativity") {
-            return (
-                <div className="InfoTypePart">
-                    <div className="room">not final colors</div>
-                    <div className="room"><div className="color" style={{backgroundColor: "rgb(50, 199, 239)"}}></div>     {dictionary[language].LowElectronegativity}     </div>
-                    <div className="room"><div className="color" style={{backgroundColor: "rgb(255, 0, 0)"}}></div>     {dictionary[language].HighElectronegativity}    </div>
+                    <div className="room"><div className="color" style={{backgroundColor: "rgb(0, 255, 0)"}}></div>
+                        {dictionary[language].LowValue}
+                    </div>
+                    <div className="room"><div className="color" style={{backgroundColor: "rgb(255, 0, 255)"}}></div>
+                        {dictionary[language].HighValue}
+                    </div>
+                    <div className="room"><div className="color Other"></div>
+                        {dictionary[language].UnknownValue}
+                    </div>
                 </div>
                 )
         }
     }
 
-
+    // Show a loading screen when the databases aren't readed
     if (isLoading) {
         return (
             <div className="Loading">Loading...</div>
@@ -127,18 +142,21 @@ const TablePage = () => {
 
     return (
         <div className="TablePage">
-            <Header />
             {/* TablePage */}
             <div className="moving">
                 <div className="left">
-                    <ParametersPart onSubmit={getData} parameters={parameters} availableLanguages={availableLanguages} colors={colors} language={language} otherInfo={otherInfo} dictionary={dictionary} />
+                    {/* Parameters */}
+                    <ParametersPart onSubmit={getData} parameters={parameters} availableLanguages={availableLanguages} colors={colors} language={language} otherInfo={otherInfo} dictionary={dictionary[language]} />
+                    {/* Captions */}
                     <div className="InfoPart">
-                        {infoRender()}
+                            {infoRender()}
                     </div>
                 </div>
-                <TablePart props={elements} colors={colors} language={language} otherInfo={otherInfo} dictionary={dictionary} />
+                {/* Elements */}
+                <TablePart props={elements} colors={colors} otherInfo={otherInfo} dictionary={dictionary[language]} />
             </div>
-            <Footer language={language} dictionary={dictionary} />
+            {/* Credits */}
+            <Footer dictionary={dictionary[language]} />
         </div>
     );
     // }

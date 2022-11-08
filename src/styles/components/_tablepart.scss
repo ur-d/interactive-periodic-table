@@ -2,16 +2,17 @@
     // margin: auto;
     display: grid;
     grid-template-areas:
-    "H  .   .   Ex  Ex  .   .   .   .   .   .   .   .   .   .   .   .   He"
-    "Li Be  .   Ex  Ex  .   .   .   .   .   .   .   B   C   N   O   F   Ne"
-    "Na Mg  .   .   .   .   .   .   .   .   .   .   Al  Si  P   S   Cl  Ar"
-    "K  Ca  Sc  Ti  V   Cr  Mn  Fe  Co  Ni  Cu  Zn  Ga  Ge  As  Se  Br  Kr"
-    "Rb Sr  Y   Zr  Nb  Mo  Tc  Ru  Rh  Pd  Ag  Cd  In  Sn  Sb  Te  I   Xe"
-    "Cs Ba  P1  Hf  Ta  W   Re  Os  Ir  Pt  Au  Hg  Tl  Pb  Bi  Po  At  Rn"
-    "Fr Ra  P2  Rf  Db  Sg  Bh  Hs  Mt  Ds  Rg  Cn  Nh  Fl  Mc  Lv  Ts  Og"
-    "Ma .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . "
-    ".  .   .   La  Ce  Pr  Nd  Pm  Sm  Eu  Gd  Tb  Dy  Ho  Er  Tm  Yb  Lu"
-    ".  .   .   Ac  Th  Pa  U   Np  Pu  Am  Cm  Bk  Cf  Es  Fm  Md  No  Lr";
+    "C1 .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   C18"
+    "H  C2  .   .   Ex  Ex  .   .   .   .   .   .   .   C13 C14 C15 C16 C17 He "
+    "Li Be  .   .   Ex  Ex  .   .   .   .   .   .   .   B   C   N   O   F   Ne "
+    "Na Mg  C3  .   C4  C5  C6  C7  C8  C9  C10 C11 C12 Al  Si  P   S   Cl  Ar "
+    "K  Ca  Sc  .   Ti  V   Cr  Mn  Fe  Co  Ni  Cu  Zn  Ga  Ge  As  Se  Br  Kr "
+    "Rb Sr  Y   .   Zr  Nb  Mo  Tc  Ru  Rh  Pd  Ag  Cd  In  Sn  Sb  Te  I   Xe "
+    "Cs Ba  La  P1  Hf  Ta  W   Re  Os  Ir  Pt  Au  Hg  Tl  Pb  Bi  Po  At  Rn "
+    "Fr Ra  Ac  P2  Rf  Db  Sg  Bh  Hs  Mt  Ds  Rg  Cn  Nh  Fl  Mc  Lv  Ts  Og "
+    "Ma .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  "
+    ".  .   .   .   Ce  Pr  Nd  Pm  Sm  Eu  Gd  Tb  Dy  Ho  Er  Tm  Yb  Lu  .  "
+    ".  .   .   .   Th  Pa  U   Np  Pu  Am  Cm  Bk  Cf  Es  Fm  Md  No  Lr  .  ";
     // position: relative;
     // top: -200px;
 
@@ -20,6 +21,15 @@
 .Ma {
     height: 10px;
 }
+
+.Column {
+    height: 20px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 
 .TablePart {
     // position: relative;

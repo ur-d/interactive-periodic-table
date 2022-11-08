@@ -1,22 +1,26 @@
 import React, { useState, useEffect } from 'react';
 
+// The left part of the website, containing all of the parameters
 const ParametersPart = ({ onSubmit, parameters, availableLanguages, colors, language, otherInfo, dictionary }) => {
 
+    // Data infos list
     const [otherParameters, setOtherParameters] = useState(["None"])
-    const spectrumParameters = ["Type", "Electronegativity", "AtomicRadius"]
     
+    // Currently active settings :
     const [activeSettings, setActiveSettings] = useState({
         "colors": colors,
         "language": language,
         "otherInfo": otherInfo
     });
 
+    // Use to not trigger the useEffect
     var tmpSettings = {}
     
     // Remove always active and uninterresting parameters from the "parameters" array
     useEffect(() => {
         var OP = []
-        const filteredParameters = ["AtomicNumber", "Symbol", "AtomicMass", "Radioactive", "Type", "Discoverer", "Year"]
+        // Unwanted informations contained in the database
+        const filteredParameters = ["AtomicNumber", "Symbol", "AtomicMass", "Radioactive", "Type", "Discoverer", "Year", "NumberofNeutrons", "NumberOfIsotopes"]
 
         for (let i = 0; i < parameters.length; i++) {
             let test = false
@@ -32,6 +36,7 @@ const ParametersPart = ({ onSubmit, parameters, availableLanguages, colors, lang
         setOtherParameters(OP)
     }, [parameters])
 
+    // Change the active settings inside of TablePage.js
     const set = (parameterType, parameter) => {
         tmpSettings = activeSettings
         tmpSettings[parameterType] = parameter
@@ -39,6 +44,7 @@ const ParametersPart = ({ onSubmit, parameters, availableLanguages, colors, lang
         onSubmit(parameterType, tmpSettings)
     }
 
+    // Checks if the parameter is the default one
     const isDefaultCheck = (section, param) => {
         if (section === "otherInfo" && param === activeSettings["otherInfo"]) {
             return true
@@ -58,9 +64,10 @@ const ParametersPart = ({ onSubmit, parameters, availableLanguages, colors, lang
             {/* ParametersPart */}
             <div className="parameters">
                 {/* Parameters */}
+
                 <div className="parameters-other">
-                    {dictionary[language].Data}
-                    {/* parameters-other */}
+                    {/* Others infos parameter */}
+                    {dictionary.Data}
                     {otherParameters
                         .map((parameter) => (
                             <label key={parameter} className={"container set-" + parameter} htmlFor={parameter}>
@@ -75,48 +82,43 @@ const ParametersPart = ({ onSubmit, parameters, availableLanguages, colors, lang
                                 >
                                 </input>
                                 <span className="checkmark"></span>
-                                <div className="parameter-name">{dictionary[language][parameter]}</div>
+                                <div className="parameter-name">{dictionary[parameter]}</div>
                             </label>
                         ))
                     }
                 </div>
                     
-                <div className="parameters-spectrum">
-                    {dictionary[language].Color}
-                    {/* parameters-spectrum */}
-                    {spectrumParameters
-                        .map((parameter) => (
-                            <label key={parameter + "-spectrum"} className={"container set-" + parameter + "-spectrum"} htmlFor={parameter + "-spectrum"}>
-                                <input
-                                    type="radio"
-                                    id={parameter + "-spectrum"}
-                                    name="parameters-spectrum"
-                                    defaultChecked={isDefaultCheck("colors", parameter)}
-                                    onChange={() => {
-                                        set("colors", parameter)
-                                    }}
-                                >
-                                </input>
-                                <span className="checkmark"></span>
-                                <div className="parameter-name">{dictionary[language][parameter]}</div>
-                            </label>
-                        ))
-                    }
+                <div className="parameters-gradiant">
+                    {/* Grandient parameter */}
+                    {dictionary.Color}
+                    <label key={"gradiant"} className={"container set-gradiant"} htmlFor={"gradiant"}>
+                        <input
+                            type="checkbox"
+                            id={"gradiant"}
+                            name="parameters-gradiant"
+                            defaultChecked={false}
+                            onChange={(r) => {
+                                set("colors", r.target.checked)
+                            }}
+                        >
+                        </input>
+                        <span className="checkmark"></span>
+                        <div className="parameter-name">{dictionary["Gradient"]}</div>
+                    </label>
                 </div>
 
                 <div className="parameters-lang">
-                    {dictionary[language].Language}
+                    {/* Language parameter */}
+                    {dictionary.Language}
                     <select id='parameters-lang' value={language} onChange={(r) => {
-                        document.title = dictionary[r.target.value].PTEI; 
                         var tmpSettings = activeSettings
                         tmpSettings["language"] = r.target.value
                         setActiveSettings(tmpSettings)
                         onSubmit("language", tmpSettings)
-
-                        }} >
+                    }}>
                         {availableLanguages
                             .map((parameter) => (
-                                <option key={parameter} value={parameter} >
+                                <option key={parameter} value={parameter}>
                                     {parameter}
                                 </option>
                             ))

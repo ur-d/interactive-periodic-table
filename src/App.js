@@ -1,17 +1,11 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import SecretPage from "./pages/SecretPage";
 import TablePage from './pages/TablePage';
 
+// The root components who directly send to the table page
 const App = () => {
 
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/secret" element={<SecretPage />} />
-                <Route path="/*" element={<TablePage />} />
-            </Routes>
-        </BrowserRouter>
+        <TablePage />
     );
 };
 

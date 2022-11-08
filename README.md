@@ -25,6 +25,19 @@ The rows list each elements and the columns each data (electronegativity, atomic
 If you want to modify traductions or add a language : `public/languages.csv`.\
 The rows list each words and the columns each language, feel free to add any language you want.
 
+## Changing pre-selected and unwanted datas
+
+If you want to change the pre-selected data, you can edit the `src/components/TablePage.js`.\
+On the top there are tree settings for data info, language, and gradient.\
+Just change the text here : `const [dataInfo, setDataInfo] = useState("HERE")`.
+
+To add or remove an unwanted data go to `src/components/ParametersPart.js` near the top.\
+You should find an array named `filteredParameters`, change what you want.
+
+### To change data parameters order
+
+You just have to change the columns order in the `public/periodic_table.csv`
+
 
 ## Available Scripts
 

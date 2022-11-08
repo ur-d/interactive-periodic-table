@@ -116,8 +116,18 @@ div.OtherInfo {
 }
 
 .Path {
-    transition: none;
-    margin:auto;
+    margin: 2px;
+    width: 35px;
+    height: 92px;
+    outline: black solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    div {
+        // margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .Info {

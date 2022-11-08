@@ -1,66 +1,55 @@
 import React, { useState, useEffect} from 'react';
 
-const Element = ({ props, colors, language, otherInfo, dictionary }) => {
+// Render information given by TablePart
+const Element = ({ props, colors, otherInfo, dictionary, maximum }) => {
 
+    // Updatable informations
     const [otherInfoRender, setOtherInfoRender] = useState(undefined)
-    const [languageRender, setLanguageRender] = useState(dictionary[language][props.AtomicNumber])
+    const [languageRender, setLanguageRender] = useState(dictionary[props.AtomicNumber])
+
+    // Style informations, change when gradient is on
     const [backgroundColor, setBackgroundColor] = useState("")
     const [color, setColor] = useState("")
 
     
+    // Update information 
     useEffect(() => {
         setOtherInfoRender(props[otherInfo])
     }, [otherInfo, props]);
 
+    // Update language
     useEffect(() => {
-        setLanguageRender(dictionary[language][props.Symbol])
-    }, [language, dictionary, props.Symbol])
+        setLanguageRender(dictionary[props.Symbol])
+    }, [dictionary, props])
 
+    // Update gradient
     useEffect(() => {
-        if (colors === "Type") {
-            setBackgroundColor("")
-            setColor("")
+        if (colors === false) {
+                setBackgroundColor("")
+                setColor("")
         }
 
-        if (colors === "AtomicRadius") {
+        if (colors === true) {
             setColor("")
-            if (props.AtomicRadius !== "") {
-                var product = parseFloat(props.AtomicRadius) * 280;
-                product = product / 3.5;
+            if (props[otherInfo] === "") {
+                setBackgroundColor("white")
+            }
+            else {
+                var product = parseFloat(props[otherInfo]) * 255;
+                product = product / maximum;
                 var product2 = product - 255;
                 product2 = product2 * -1;
-                // show color for the spectrum
-                setBackgroundColor(`rgb(${product/1.3},${product2},${product})`)
-                if (props.AtomicRadius >= 1.5) {
+                setBackgroundColor(`rgb(${product},${product2},${product})`)
+                if (parseFloat(props[otherInfo]) > maximum*0.4) {
                     setColor("white")
                 }
             }
-            else {
-                // show white
-                setBackgroundColor("white")
-            }
+            
         }
+        // DO NOT PUT "otherInfo" in the array dependencies below, it will cause flashing colors
+    }, [colors, props, maximum])
 
-        if (colors === "Electronegativity") {
-            setColor("")
-            if (props.Electronegativity !== "") {
-                product = parseFloat(props.Electronegativity) * 240;
-                product = product / 3;
-                product2 = product - 255;
-                product2 = product2 * -1;
-                // show color for the spectrum
-                setBackgroundColor(`rgb(${product*0.89},${product2},${product2*1.2})`)
-                if (props.Electronegativity >= 1.6) {
-                    setColor("white")
-                }
-            }
-            else {
-                // show white
-                setBackgroundColor("white")
-            }
-        }
-    }, [colors, props.Electronegativity, props.AtomicRadius])
-
+    // Render radioactive if it is
     const isRadioactive = () => {
         if (props.Radioactive === "yes") {
             return (
