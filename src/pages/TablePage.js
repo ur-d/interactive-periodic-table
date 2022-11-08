@@ -99,21 +99,13 @@ const TablePage = () => {
     const infoRender = () => {
         // Type colors
         if (colors === false) {
-            return (
-                <div className="InfoTypePart">
-                    <div className="room"><div className="color Other"></div>               {dictionary[language].Other}              </div>
-                    <div className="room"><div className="color AlkaliMetal"></div>         {dictionary[language].AlkaliMetal}        </div>
-                    <div className="room"><div className="color AlkalineEarthMetal"></div>  {dictionary[language].AlkalineEarthMetal} </div>
-                    <div className="room"><div className="color TransitionMetal"></div>     {dictionary[language].TransitionMetal}    </div>
-                    <div className="room"><div className="color Metal"></div>               {dictionary[language].Metal}              </div>
-                    <div className="room"><div className="color Metalloid"></div>           {dictionary[language].Metalloid}          </div>
-                    <div className="room"><div className="color Nonmetal"></div>            {dictionary[language].Nonmetal}           </div>
-                    <div className="room"><div className="color Halogen"></div>             {dictionary[language].Halogen}            </div>
-                    <div className="room"><div className="color NobleGas"></div>            {dictionary[language].NobleGas}           </div>
-                    <div className="room"><div className="color Lanthanide"></div>          {dictionary[language].Lanthanide}         </div>
-                    <div className="room"><div className="color Actinide"></div>            {dictionary[language].Actinide}           </div>
-                </div>
-                )
+            // Colors list
+            const typeList = ["Other", "AlkaliMetal", "AlkalineEarthMetal", "TransitionMetal", "Metal", "Metalloid", "Nonmetal", "Halogen", "NobleGas", "Lanthanide", "Actinide"]
+            var output = []
+            for (let i = 0; i < typeList.length; i++) {
+                output.push(<div key={typeList[i]} className="room"><div className={"color " + typeList[i]}></div>{dictionary[language][typeList[i]]}</div>)
+            }
+            return (<div className="InfoTypePart">{output}</div>)
         }
         // Grandient colors
         else if (colors === true) {

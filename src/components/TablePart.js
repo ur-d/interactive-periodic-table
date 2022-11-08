@@ -37,7 +37,7 @@ const TablePart = ({ props, colors, otherInfo, dictionary }) => {
                 {/* Exemple element */}
                 <div className="Element Exemple" style={{gridArea: "Ex"}}>
                     <div className="ExempleInfo">
-                        <div className="AtomicNumber">0</div>
+                        <div className="AtomicNumber">Z</div>
                         <div className="Symbol">Ex</div>
                         <div className="ElementName">Exemple</div>
                         <div className="AtomicMass">{dictionary.AtomicMass}</div>
