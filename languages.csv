@@ -1,6 +1,7 @@
 Languages;EN;FR
 PTEI;PTE;TPE
 None;None;Vide
+Gradient;Gradient;Dégradé
 AtomicNumber;Atomic number;Numéro atomique
 Symbol;Symbol;Symbole
 ElementNameEN;Name;Nom
@@ -31,6 +32,9 @@ HighElectronegativity;High electronegativity;Électronégativité haute
 LowAtomicRadius;Low atomic radius;Rayon atomique bas
 HighAtomicRadius;High atomic radius;Rayon atomique haut
 UnknownAtomicRadius;Unknown atomic radius;Rayon atomique inconnu
+LowValue;Low value;Valeur basse
+HighValue;High value;Valeur haute
+UnknownValue;Unknown value;Valeur inconnue
 Exemple;Exemple;Exemple
 Data;Data;Donnée
 Color;Color;Couleur
