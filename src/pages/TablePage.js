@@ -23,7 +23,7 @@ const TablePage = () => {
 
     // Reads the databases
     useEffect(() => {
-        // The datas
+        // The element's datas
         axios.get("./periodic_table.csv").then((res) => {
             // CSV to JSON
             // https://stackoverflow.com/questions/27979002/convert-csv-data-into-json-format-using-javascript
@@ -32,11 +32,12 @@ const TablePage = () => {
             var k = lines[0].split(';')
             setParameters(k)
             var result = []
-  
-            for(var i=1;i<lines.length-1;i++){
-                var obj = {}
-                var currentline = lines[i].split(";")
-                for(var j = 0; j < k.length; j++){
+            var obj
+            var currentline
+            for(let i=1;i<lines.length-1;i++){
+                obj = {}
+                currentline = lines[i].split(";")
+                for(let j = 0; j < k.length; j++){
                     obj[k[j]] = currentline[j]
                 }
                 result.push(obj)
@@ -44,7 +45,7 @@ const TablePage = () => {
             setElements(result)
         })
 
-        // The languages
+        // The languages, dictionary
         axios.get("./languages.csv").then((res) => {
             var csv = res.data.replace("\r", "")
             var slices = csv.split("\n")
@@ -54,7 +55,7 @@ const TablePage = () => {
             for (let k = 1; k < slices.length; k++) {
                 keys.push(slices[k].split(';')[0])
             }
-            var obj = {}
+            var obj
             for (let i = 1; i < slices[0].split(';').length; i++) {
                 obj = {}
                 langs.push(slices[0].split(';')[i])
@@ -63,8 +64,7 @@ const TablePage = () => {
                 }
                 result[langs[i-1]] = obj
             }
-
-            // Set it lifetime
+            // Set languages lifetime
             setAvailableLanguages(langs)
             setDictionary(result)
         })
@@ -84,8 +84,8 @@ const TablePage = () => {
 
     // Fonctions to send the selected datas from ParametersPart to here
     const getData = (parameterType, data) => {
-        if (parameterType === "colors") {
-            setColors(data.colors)
+        if (parameterType === "gradient") {
+            setColors(data.gradient)
         }
         else if (parameterType === "language") {
             setLanguage(data.language)
@@ -112,13 +112,13 @@ const TablePage = () => {
             return (
                 <div className="InfoTypePart">
                     <div className="room"><div className="color" style={{backgroundColor: "rgb(0, 255, 0)"}}></div>
-                        {dictionary[language].LowValue}
+                        {dictionary[language].MinimumValue}
                     </div>
                     <div className="room"><div className="color" style={{backgroundColor: "rgb(255, 0, 255)"}}></div>
-                        {dictionary[language].HighValue}
+                        {dictionary[language].MaximumValue}
                     </div>
                     <div className="room"><div className="color Other"></div>
-                        {dictionary[language].UnknownValue}
+                        {dictionary[language].UndefinedValue}
                     </div>
                 </div>
                 )
@@ -141,7 +141,7 @@ const TablePage = () => {
                     <ParametersPart onSubmit={getData} parameters={parameters} availableLanguages={availableLanguages} colors={colors} language={language} otherInfo={otherInfo} dictionary={dictionary[language]} />
                     {/* Captions */}
                     <div className="InfoPart">
-                            {infoRender()}
+                        {infoRender()}
                     </div>
                 </div>
                 {/* Elements */}

@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react';
 
 // Render information given by TablePart
-const Element = ({ props, colors, otherInfo, dictionary, maximum }) => {
+const Element = ({ props, colors, otherInfo, dictionary, maximum, minimum }) => {
 
     // Updatable informations
     const [otherInfoRender, setOtherInfoRender] = useState(undefined)
@@ -35,8 +35,8 @@ const Element = ({ props, colors, otherInfo, dictionary, maximum }) => {
                 setBackgroundColor("white")
             }
             else {
-                var product = parseFloat(props[otherInfo]) * 255;
-                product = product / maximum;
+                var product = (parseFloat(props[otherInfo]) - minimum) / (maximum - minimum)
+                product = product * 255;
                 var product2 = product - 255;
                 product2 = product2 * -1;
                 setBackgroundColor(`rgb(${product},${product2},${product})`)
@@ -47,7 +47,7 @@ const Element = ({ props, colors, otherInfo, dictionary, maximum }) => {
             
         }
         // DO NOT PUT "otherInfo" in the array dependencies below, it will cause flashing colors
-    }, [colors, props, maximum])
+    }, [colors, props, maximum, minimum])
 
     // Render radioactive if it is
     const isRadioactive = () => {

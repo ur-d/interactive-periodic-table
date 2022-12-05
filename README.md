@@ -38,6 +38,9 @@ You should find an array named `filteredParameters`, change what you want.
 
 You just have to change the columns order in the `public/periodic_table.csv`
 
+## Code explanation
+
+If you want to modify the source code, don't forget to check the code explanations `READMEdev.md`
 
 ## Available Scripts
 

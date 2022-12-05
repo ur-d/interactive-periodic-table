@@ -1,23 +1,27 @@
-import React from 'react';
-import { useState } from 'react';
-import { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Element from './Element';
 
 // Contain all the elements and information next to it (Exemple element, columns number, from an element to another)
 const TablePart = ({ props, colors, otherInfo, dictionary }) => {
 
-    // Stock the maximum value to calculate the gradient color
+    // Stock the maximum and minimum value to calculate the gradient color in "Element.js"
     const [maximum, setMaximum] = useState(0)
+    const [minimum, setMinimum] = useState(0)
 
     // Update the maximum value when an info is selected
     useEffect(() => {
-        var max = 0
+        var max = parseFloat(props[0][otherInfo])
+        var min = parseFloat(props[0][otherInfo])
         for (let i = 0; i < props.length; i++) {
-            if (props[i][otherInfo] > max) {
-                max = props[i][otherInfo]
+            if (parseFloat(props[i][otherInfo]) > max) {
+                max = parseFloat(props[i][otherInfo])
+            }
+            if (parseFloat(props[i][otherInfo]) < min && props[i][otherInfo] !== "") {
+                min = parseFloat(props[i][otherInfo])
             }
         }
         setMaximum(max)
+        setMinimum(min)
     }, [props, colors, otherInfo])
 
 
@@ -51,7 +55,7 @@ const TablePart = ({ props, colors, otherInfo, dictionary }) => {
                 {/* Elements */}
                 {props.map((element) => (
                     // Call an element
-                    <Element key={element.AtomicNumber} props={element} colors={colors} otherInfo={otherInfo} dictionary={dictionary} maximum={maximum}></Element>
+                    <Element key={element.AtomicNumber} props={element} colors={colors} otherInfo={otherInfo} dictionary={dictionary} maximum={maximum} minimum={minimum}></Element>
                 ))}
 
                 {/* Space between lanthanides + actinides and the upper side of the table */}

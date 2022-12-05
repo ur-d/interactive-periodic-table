@@ -8,7 +8,7 @@ const ParametersPart = ({ onSubmit, parameters, availableLanguages, colors, lang
     
     // Currently active settings :
     const [activeSettings, setActiveSettings] = useState({
-        "colors": colors,
+        "gradient": colors,
         "language": language,
         "otherInfo": otherInfo
     });
@@ -20,7 +20,7 @@ const ParametersPart = ({ onSubmit, parameters, availableLanguages, colors, lang
     useEffect(() => {
         var OP = []
         // Unwanted informations contained in the database
-        const filteredParameters = ["AtomicNumber", "Symbol", "AtomicMass", "Radioactive", "Type", "Discoverer", "Year", "NumberofNeutrons", "NumberOfIsotopes"]
+        const filteredParameters = ["AtomicNumber", "Symbol", "AtomicMass", "Radioactive", "Type", "Discoverer", "Year", "NumberofNeutrons", "NumberOfIsotopes", "OxidationState"]
 
         for (let i = 0; i < parameters.length; i++) {
             let test = false
@@ -58,6 +58,25 @@ const ParametersPart = ({ onSubmit, parameters, availableLanguages, colors, lang
         else {return false}
     }
 
+    const renderParameter = (parameter, type) => {
+        return (
+            <label key={parameter} className={"container set-" + parameter} htmlFor={parameter}>
+                <input
+                    type={type}
+                    id={parameter}
+                    name="parameters-other"
+                    defaultChecked={isDefaultCheck("otherInfo", parameter)}
+                    onChange={() => {
+                        set("otherInfo", parameter)
+                    }}
+                >
+                </input>
+                <span className="checkmark"></span>
+                <div className="parameter-name">{dictionary[parameter]}</div>
+            </label>
+        )
+    }
+
 
     return (
         <div className="ParametersPart">
@@ -70,35 +89,21 @@ const ParametersPart = ({ onSubmit, parameters, availableLanguages, colors, lang
                     {dictionary.Data}
                     {otherParameters
                         .map((parameter) => (
-                            <label key={parameter} className={"container set-" + parameter} htmlFor={parameter}>
-                                <input
-                                    type="radio"
-                                    id={parameter}
-                                    name="parameters-other"
-                                    defaultChecked={isDefaultCheck("otherInfo", parameter)}
-                                    onChange={() => {
-                                        set("otherInfo", parameter)
-                                    }}
-                                >
-                                </input>
-                                <span className="checkmark"></span>
-                                <div className="parameter-name">{dictionary[parameter]}</div>
-                            </label>
+                            renderParameter(parameter, "radio")
                         ))
                     }
                 </div>
                     
-                <div className="parameters-gradiant">
+                <div className="parameters-gradient">
                     {/* Grandient parameter */}
-                    {dictionary.Color}
-                    <label key={"gradiant"} className={"container set-gradiant"} htmlFor={"gradiant"}>
+                    <label key={"gradient"} className={"container set-gradient"} htmlFor={"gradient"}>
                         <input
                             type="checkbox"
-                            id={"gradiant"}
-                            name="parameters-gradiant"
+                            id={"gradient"}
+                            name="parameters-gradient"
                             defaultChecked={false}
                             onChange={(r) => {
-                                set("colors", r.target.checked)
+                                set("gradient", r.target.checked)
                             }}
                         >
                         </input>

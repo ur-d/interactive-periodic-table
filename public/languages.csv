@@ -12,7 +12,7 @@ NumberofNeutrons;Number of neutrons;Nombre de neutrons
 AtomicRadius;Atomic radius;Rayon atomique
 Electronegativity;Electronegativity;Électronégativité
 OxidationState;Oxidation state;État d’oxydation
-FirstIonization;First Ionization;Energie d’ionisiation
+FirstIonization;First Ionization;Énergie d’ionisiation
 NumberOfIsotopes;Number of isotopes;Nombre d’isotopes
 Discoverer;Discoverer;Découvreur
 Year;Year;Année
@@ -32,8 +32,11 @@ HighElectronegativity;High electronegativity;Électronégativité haute
 LowAtomicRadius;Low atomic radius;Rayon atomique bas
 HighAtomicRadius;High atomic radius;Rayon atomique haut
 UnknownAtomicRadius;Unknown atomic radius;Rayon atomique inconnu
+UndefinedValue;Undefined value;Valeur indéfinie
 LowValue;Low value;Valeur basse
 HighValue;High value;Valeur haute
+MinimumValue;Minimum value;Valeur minimum
+MaximumValue;Maximum value;Valeur maximum
 UnknownValue;Unknown value;Valeur inconnue
 Exemple;Exemple;Exemple
 Data;Data;Donnée
