@@ -67,9 +67,11 @@ elements, parameters, availableLanguage, isLoading
 ### useState
 - maximum : stores the maximum value of the selected info
 - minimum : stores the minimum value of the selected info
+- exempleOtherInfo : stores what's supposed to be render in the exemple element's otherInfo
 
 ### useEffect
 - Checks each element's selected info to set the minimum to "minimum" and max to "maximum"
+- Sets exempleOtherInfo
 
 ### Render
 - Exemple element

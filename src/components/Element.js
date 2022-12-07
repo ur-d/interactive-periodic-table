@@ -11,10 +11,15 @@ const Element = ({ props, colors, otherInfo, dictionary, maximum, minimum }) => 
     const [backgroundColor, setBackgroundColor] = useState("")
     const [color, setColor] = useState("")
 
-    
+
     // Update information 
     useEffect(() => {
-        setOtherInfoRender(props[otherInfo])
+        if (otherInfo === "AtomicMass") {
+            setOtherInfoRender("")
+        }
+        else {   
+            setOtherInfoRender(props[otherInfo])
+        }
     }, [otherInfo, props]);
 
     // Update language

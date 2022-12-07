@@ -20,7 +20,7 @@ const ParametersPart = ({ onSubmit, parameters, availableLanguages, colors, lang
     useEffect(() => {
         var OP = []
         // Unwanted informations contained in the database
-        const filteredParameters = ["AtomicNumber", "Symbol", "AtomicMass", "Radioactive", "Type", "Discoverer", "Year", "NumberofNeutrons", "NumberOfIsotopes", "OxidationState"]
+        const filteredParameters = ["AtomicNumber", "Symbol", "Radioactive", "Type", "Discoverer", "Year", "NumberofNeutrons", "NumberOfIsotopes", "OxidationState"]
 
         for (let i = 0; i < parameters.length; i++) {
             let test = false

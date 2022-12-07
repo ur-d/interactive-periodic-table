@@ -8,6 +8,9 @@ const TablePart = ({ props, colors, otherInfo, dictionary }) => {
     const [maximum, setMaximum] = useState(0)
     const [minimum, setMinimum] = useState(0)
 
+    // Render the wanted info in the exemple element
+    const [exempleOtherInfo, setExempleOtherInfo] = useState("")
+
     // Update the maximum value when an info is selected
     useEffect(() => {
         var max = parseFloat(props[0][otherInfo])
@@ -23,6 +26,16 @@ const TablePart = ({ props, colors, otherInfo, dictionary }) => {
         setMaximum(max)
         setMinimum(min)
     }, [props, colors, otherInfo])
+
+    // Update exempleOtherInfo, don't show if atomic mass is selected
+    useEffect(() => {
+        if (otherInfo === "AtomicMass") {
+            setExempleOtherInfo("")
+        }
+        else {
+            setExempleOtherInfo(dictionary[otherInfo])
+        }
+    }, [otherInfo, dictionary])
 
 
     // Render columns from 1 to 18
@@ -45,7 +58,7 @@ const TablePart = ({ props, colors, otherInfo, dictionary }) => {
                         <div className="Symbol">Ex</div>
                         <div className="ElementName">Exemple</div>
                         <div className="AtomicMass">{dictionary.AtomicMass}</div>
-                        <div className="OtherInfo">{dictionary[otherInfo]}</div>
+                        <div className="OtherInfo">{exempleOtherInfo}</div>
                     </div>
                 </div>
 
