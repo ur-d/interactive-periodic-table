@@ -5,14 +5,14 @@ Gradient;Gradient;Dégradé
 AtomicNumber;Atomic number;Numéro atomique
 Symbol;Symbol;Symbole
 ElementNameEN;Name;Nom
-AtomicMass;Atomic mass;Masse atomique
+AtomicMass;Atomic mass [u];Masse atomique [u]
 Radioactive;Radioactive;Radioactif
 Type;Type;Type
 NumberofNeutrons;Number of neutrons;Nombre de neutrons
-AtomicRadius;Atomic radius;Rayon atomique
+AtomicRadius;Atomic radius [pm];Rayon atomique [pm]
 Electronegativity;Electronegativity;Électronégativité
 OxidationState;Oxidation state;État d’oxydation
-FirstIonization;First Ionization;Énergie d’ionisiation
+FirstIonization;First Ionization [eV];Énergie d’ionisiation [eV]
 NumberOfIsotopes;Number of isotopes;Nombre d’isotopes
 Discoverer;Discoverer;Découvreur
 Year;Year;Année

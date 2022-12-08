@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 
 // Render information given by TablePart
 const Element = ({ props, colors, otherInfo, dictionary, maximum, minimum }) => {
