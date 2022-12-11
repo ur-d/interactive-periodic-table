@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
+
 import TablePart from "../components/TablePart";
 import ParametersPart from "../components/ParametersPart";
 import Footer from "../components/Footer";
-import axios from "axios";
 
 // The main components, reads the databases, calls the parts, and render the colors caption
 const TablePage = () => {

@@ -9,7 +9,7 @@ AtomicMass;Atomic mass [u];Masse atomique [u]
 Radioactive;Radioactive;Radioactif
 Type;Type;Type
 NumberofNeutrons;Number of neutrons;Nombre de neutrons
-AtomicRadius;Atomic radius [pm];Rayon atomique [pm]
+AtomicRadius;Atomic radius [å];Rayon atomique [å]
 Electronegativity;Electronegativity;Électronégativité
 OxidationState;Oxidation state;État d’oxydation
 FirstIonization;First Ionization [eV];Énergie d’ionisiation [eV]
